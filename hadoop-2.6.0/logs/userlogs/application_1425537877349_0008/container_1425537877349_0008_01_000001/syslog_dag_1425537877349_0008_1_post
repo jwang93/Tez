@@ -1,0 +1,27 @@
+2015-03-05 02:11:47,182 INFO [ContainerLauncher #1] org.apache.tez.dag.app.launcher.ContainerLauncherImpl: Sending a stop request to the NM for ContainerId: container_1425537877349_0008_01_000002
+2015-03-05 02:11:47,182 INFO [ContainerLauncher #1] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : 10.190.34.79:51016
+2015-03-05 02:11:47,182 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.DAGAppMaster: On DAG completion. Old state: RUNNING new state: SUCCEEDED
+2015-03-05 02:11:47,182 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.DAGAppMaster: Shutting down on completion of dag:dag_1425537877349_0008_1
+2015-03-05 02:11:47,182 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.DAGAppMaster: Handling DAGAppMaster shutdown
+2015-03-05 02:11:47,236 INFO [IPC Server handler 6 on 53949] org.apache.tez.dag.app.TaskAttemptListenerImpTezDag: Container with id: container_1425537877349_0008_01_000002 is valid, but no longer registered, and will be killed
+2015-03-05 02:11:52,185 INFO [AMShutdownThread] org.apache.tez.dag.app.DAGAppMaster: Calling stop for all the services
+2015-03-05 02:11:52,186 INFO [AMShutdownThread] org.apache.tez.dag.history.HistoryEventHandler: Stopping HistoryEventHandler
+2015-03-05 02:11:52,186 INFO [AMShutdownThread] org.apache.tez.dag.history.recovery.RecoveryService: Stopping RecoveryService
+2015-03-05 02:11:52,187 INFO [AMShutdownThread] org.apache.tez.dag.history.recovery.RecoveryService: Closing Summary Stream
+2015-03-05 02:11:52,187 INFO [RecoveryEventHandlingThread] org.apache.tez.dag.history.recovery.RecoveryService: EventQueue take interrupted. Returning
+2015-03-05 02:11:52,192 INFO [DelayedContainerManager] org.apache.tez.dag.app.rm.TaskScheduler: AllocatedContainerManager Thread interrupted
+2015-03-05 02:11:52,194 INFO [AMShutdownThread] org.apache.tez.dag.app.rm.TaskScheduler: Unregistering application from RM, exitStatus=SUCCEEDED, exitMessage=, trackingURL=
+2015-03-05 02:11:52,203 INFO [AMShutdownThread] org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl: Waiting for application to be successfully unregistered.
+2015-03-05 02:11:52,312 INFO [AMRM Callback Handler Thread] org.apache.hadoop.yarn.client.api.async.impl.AMRMClientAsyncImpl: Interrupted while waiting for queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:1961)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1996)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:399)
+	at org.apache.hadoop.yarn.client.api.async.impl.AMRMClientAsyncImpl$CallbackHandlerThread.run(AMRMClientAsyncImpl.java:274)
+2015-03-05 02:11:52,312 INFO [AMShutdownThread] org.apache.hadoop.ipc.Server: Stopping server on 53949
+2015-03-05 02:11:52,323 INFO [IPC Server listener on 53949] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 53949
+2015-03-05 02:11:52,324 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2015-03-05 02:11:52,324 INFO [AMShutdownThread] org.apache.hadoop.ipc.Server: Stopping server on 53950
+2015-03-05 02:11:52,324 INFO [IPC Server listener on 53950] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 53950
+2015-03-05 02:11:52,324 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2015-03-05 02:11:52,324 INFO [AMShutdownThread] org.apache.tez.dag.app.DAGAppMaster: Exiting DAGAppMaster..GoodBye!

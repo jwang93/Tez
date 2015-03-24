@@ -1,0 +1,4 @@
+2015-03-03 02:26:25.987 java[74429:3869226] Unable to load realm info from SCDynamicStore
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.ipc.Server).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.

@@ -1,0 +1,16 @@
+digraph jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1 {
+graph [ label="jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_1_w" [ label = "Map_1[w]", shape = "box" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_1_w" -> "jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_1" [ label = "Input [inputClass=MRInputLegacy,\n initializer=MRInputAMSplitGenerator]" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Reducer_3_out_Reducer_3" [ label = "Reducer_3[out_Reducer_3]", shape = "box" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Reducer_3" [ label = "Reducer_3[ReduceTezProcessor]" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Reducer_3" -> "jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Reducer_3_out_Reducer_3" [ label = "Output [outputClass=MROutput,\n initializer=]" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_1" [ label = "Map_1[MapTezProcessor]" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_1" -> "jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_2" [ label = "[input=OnFileUnorderedKVOutput,\n output=ShuffledUnorderedKVInput,\n dataMovement=BROADCAST,\n schedulingType=SEQUENTIAL]" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_2_p" [ label = "Map_2[p]", shape = "box" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_2_p" -> "jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_2" [ label = "Input [inputClass=MRInputLegacy,\n initializer=MRInputAMSplitGenerator]" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_2" [ label = "Map_2[MapTezProcessor]" ];
+"jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Map_2" -> "jaywang_20150323155858_7ed3d14d_3a6b_442a_b31a_ca5bbd7a78b5_1.Reducer_3" [ label = "[input=OnFileSortedOutput,\n output=ShuffledMergedInputLegacy,\n dataMovement=SCATTER_GATHER,\n schedulingType=SEQUENTIAL]" ];
+}

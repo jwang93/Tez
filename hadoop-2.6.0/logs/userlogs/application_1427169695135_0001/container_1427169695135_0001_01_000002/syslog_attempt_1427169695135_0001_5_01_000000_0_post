@@ -1,0 +1,9 @@
+2015-03-24 00:06:11,307 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Attempting to fetch new task
+2015-03-24 00:06:13,306 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2s
+2015-03-24 00:06:15,353 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2s
+2015-03-24 00:06:16,720 INFO [Tez Container Heartbeat Thread [container_1427169695135_0001_01_000002]] org.apache.hadoop.mapred.YarnTezDagChild: Received should die response from AM
+2015-03-24 00:06:16,723 INFO [Tez Container Heartbeat Thread [container_1427169695135_0001_01_000002]] org.apache.hadoop.mapred.YarnTezDagChild: Current task marked as complete. Stopping heartbeat thread and allowing normal container shutdown
+2015-03-24 00:06:16,787 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Got TaskUpdate: 5480 ms after starting to poll. TaskInfo: shouldDie: true
+2015-03-24 00:06:16,890 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping VertexTask metrics system...
+2015-03-24 00:06:16,891 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system stopped.
+2015-03-24 00:06:16,891 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system shutdown complete.

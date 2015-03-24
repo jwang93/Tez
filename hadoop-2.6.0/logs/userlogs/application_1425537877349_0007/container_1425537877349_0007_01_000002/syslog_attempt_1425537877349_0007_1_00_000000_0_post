@@ -1,0 +1,7 @@
+2015-03-05 02:07:42,985 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Attempting to fetch new task
+2015-03-05 02:07:42,987 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Got TaskUpdate: 2 ms after starting to poll. TaskInfo: shouldDie: true
+2015-03-05 02:07:42,987 INFO [Tez Container Heartbeat Thread [container_1425537877349_0007_01_000002]] org.apache.hadoop.mapred.YarnTezDagChild: Heartbeat thread interrupted.  stopped: true error: false
+2015-03-05 02:07:42,987 INFO [Tez Container Heartbeat Thread [container_1425537877349_0007_01_000002]] org.apache.hadoop.mapred.YarnTezDagChild: Current task marked as complete. Stopping heartbeat thread and allowing normal container shutdown
+2015-03-05 02:07:43,092 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping VertexTask metrics system...
+2015-03-05 02:07:43,092 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system stopped.
+2015-03-05 02:07:43,093 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system shutdown complete.

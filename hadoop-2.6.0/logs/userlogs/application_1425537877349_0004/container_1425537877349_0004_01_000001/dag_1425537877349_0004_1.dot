@@ -1,0 +1,12 @@
+digraph INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_ {
+graph [ label="INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.finalreduce_MROutput" [ label = "finalreduce[MROutput]", shape = "box" ];
+"INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.initialmap_MRInput" [ label = "initialmap[MRInput]", shape = "box" ];
+"INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.initialmap_MRInput" -> "INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.initialmap" [ label = "Input [inputClass=MRInputLegacy,\n initializer=]" ];
+"INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.initialmap" [ label = "initialmap[MapProcessor]" ];
+"INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.initialmap" -> "INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.finalreduce" [ label = "[input=OnFileSortedOutput,\n output=ShuffledMergedInputLegacy,\n dataMovement=SCATTER_GATHER,\n schedulingType=SEQUENTIAL]" ];
+"INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.finalreduce" [ label = "finalreduce[ReduceProcessor]" ];
+"INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.finalreduce" -> "INSERT_OVERWRITE_TABLE_least_overweigh_100_Stage_2_.finalreduce_MROutput" [ label = "Output [outputClass=MROutputLegacy,\n initializer=MROutputCommitter]" ];
+}

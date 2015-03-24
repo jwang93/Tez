@@ -1,0 +1,10 @@
+digraph select_school_years_from_weigh_2010_2012_Stage_1_ {
+graph [ label="select_school_years_from_weigh_2010_2012_Stage_1_", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"select_school_years_from_weigh_2010_2012_Stage_1_.initialmap_MROutput" [ label = "initialmap[MROutput]", shape = "box" ];
+"select_school_years_from_weigh_2010_2012_Stage_1_.initialmap" [ label = "initialmap[MapProcessor]" ];
+"select_school_years_from_weigh_2010_2012_Stage_1_.initialmap" -> "select_school_years_from_weigh_2010_2012_Stage_1_.initialmap_MROutput" [ label = "Output [outputClass=MROutputLegacy,\n initializer=MROutputCommitter]" ];
+"select_school_years_from_weigh_2010_2012_Stage_1_.initialmap_MRInput" [ label = "initialmap[MRInput]", shape = "box" ];
+"select_school_years_from_weigh_2010_2012_Stage_1_.initialmap_MRInput" -> "select_school_years_from_weigh_2010_2012_Stage_1_.initialmap" [ label = "Input [inputClass=MRInputLegacy,\n initializer=]" ];
+}

@@ -1,0 +1,117 @@
+2015-03-24 00:06:02,597 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: LocalDirs for child: [/tmp/hadoop-jaywang/nm-local-dir/usercache/jaywang/appcache/application_1427169695135_0001]
+2015-03-24 00:06:02,616 INFO [main] org.apache.hadoop.yarn.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2015-03-24 00:06:02,616 INFO [main] org.apache.tez.runtime.metrics.TaskCounterUpdater:  Using ResourceCalculatorProcessTree : null
+2015-03-24 00:06:02,617 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalIOProcessorRuntimeTask with TaskSpec: DAGName : jaywang_20150324000505_f818a560-3ecb-4403-aec2-0f9a2953f4bb:1, VertexName: Map 1, TaskAttemptID:attempt_1427169695135_0001_1_02_000000_0, processorName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor, inputSpecListSize=1, outputSpecListSize=1, inputSpecList=[{{ sourceVertexName=w, physicalEdgeCount=0, inputClassName=org.apache.tez.mapreduce.input.MRInputLegacy }}, ], outputSpecList=[{{ destinationVertexName=Map 2, physicalEdgeCount=1, outputClassName=org.apache.tez.runtime.library.output.OnFileUnorderedKVOutput }}, ]
+2015-03-24 00:06:02,631 INFO [main] org.apache.tez.runtime.common.resources.MemoryDistributor: InitialMemoryDistributor (isEnabled=true) invoked with: numInputs=1, numOutputs=1, JVM.maxFree=207093760
+2015-03-24 00:06:03,353 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Initializing task, taskAttemptId=attempt_1427169695135_0001_1_02_000000_0
+2015-03-24 00:06:03,353 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initializing LogicalProcessorIORuntimeTask
+2015-03-24 00:06:03,354 INFO [Initializer 0] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initializing Input using InputSpec: { sourceVertexName=w, physicalEdgeCount=0, inputClassName=org.apache.tez.mapreduce.input.MRInputLegacy }
+2015-03-24 00:06:03,354 INFO [Initializer 0] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Creating Input
+2015-03-24 00:06:03,355 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initializing processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2015-03-24 00:06:03,355 INFO [Initializer 1] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initializing Output using OutputSpec: { destinationVertexName=Map 2, physicalEdgeCount=1, outputClassName=org.apache.tez.runtime.library.output.OnFileUnorderedKVOutput }
+2015-03-24 00:06:03,355 INFO [Initializer 1] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Creating Output
+2015-03-24 00:06:03,361 INFO [main] org.apache.hadoop.hive.ql.log.PerfLogger: <PERFLOG method=TezInitializeProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2015-03-24 00:06:03,362 INFO [Initializer 1] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initializing Output with dest edge: Map 2
+2015-03-24 00:06:03,363 INFO [Initializer 0] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initializing Input with src edge: w
+2015-03-24 00:06:03,365 INFO [Initializer 0] org.apache.tez.runtime.common.resources.MemoryDistributor$RequestorInfo: Received request: 0, type: INPUT, componentVertexName: w
+2015-03-24 00:06:03,387 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.committer.job.setup.cleanup.needed is deprecated. Instead, use mapreduce.job.committer.setup.cleanup.needed
+2015-03-24 00:06:03,400 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.input.dir.recursive is deprecated. Instead, use mapreduce.input.fileinputformat.input.dir.recursive
+2015-03-24 00:06:03,411 INFO [Initializer 1] org.apache.tez.runtime.common.resources.MemoryDistributor$RequestorInfo: Received request: 0, type: OUTPUT, componentVertexName: Map 2
+2015-03-24 00:06:03,411 INFO [Initializer 1] org.apache.tez.runtime.library.output.OnFileUnorderedKVOutput: OnFileUnorderedKVOutput running with params -> dataViaEventsEnabled: false, dataViaEventsMaxSize: 204800
+2015-03-24 00:06:03,411 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2015-03-24 00:06:03,411 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2015-03-24 00:06:03,411 INFO [main] org.apache.hadoop.hive.ql.log.PerfLogger: </PERFLOG method=TezInitializeProcessor start=1427169963361 end=1427169963411 duration=50 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2015-03-24 00:06:03,412 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initialized processor, processorClassName=org.apache.hadoop.hive.ql.exec.tez.MapTezProcessor
+2015-03-24 00:06:03,412 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Waiting for 2 initializers to finish
+2015-03-24 00:06:03,412 INFO [Initializer 1] org.apache.tez.common.counters.Limits: Counter limits initialized with parameters:  GROUP_NAME_MAX=128, MAX_GROUPS=500, COUNTER_NAME_MAX=64, MAX_COUNTERS=1200
+2015-03-24 00:06:03,431 INFO [Initializer 1] org.apache.tez.runtime.library.broadcast.output.FileBasedKVWriter: Created KVWriter -> compressionCodec: NoCompressionCodec
+2015-03-24 00:06:03,434 INFO [Initializer 0] org.apache.tez.mapreduce.input.MRInput: Using New mapreduce API: false, split information via event: true
+2015-03-24 00:06:03,434 INFO [Initializer 0] org.apache.tez.mapreduce.input.MRInputLegacy: MRInputLegacy deferring initialization
+2015-03-24 00:06:03,434 INFO [Initializer 0] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initialized Input with src edge: w
+2015-03-24 00:06:03,434 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Waiting for 1 initializers to finish
+2015-03-24 00:06:03,440 INFO [Initializer 1] org.apache.tez.runtime.library.broadcast.output.FileBasedKVWriter: Writing data file: /tmp/hadoop-jaywang/nm-local-dir/usercache/jaywang/appcache/application_1427169695135_0001/output/attempt_1427169695135_0001_1_02_000000_0_10002/file.out
+2015-03-24 00:06:03,452 INFO [Initializer 1] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Initialized Output with dest edge: Map 2
+2015-03-24 00:06:03,452 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: All initializers finished
+2015-03-24 00:06:03,458 INFO [main] org.apache.tez.runtime.common.resources.MemoryDistributor: Using Allocator class: org.apache.tez.runtime.common.resources.ScalingAllocator
+2015-03-24 00:06:03,465 INFO [main] org.apache.tez.runtime.common.resources.ScalingAllocator: Scaling Requests. TotalRequested: 0, TotalJVMHeap: 207093760, TotalAvailable: 144965632, TotalRequested/TotalJVMHeap:0.00
+2015-03-24 00:06:03,465 INFO [main] org.apache.tez.runtime.common.resources.MemoryDistributor: Informing: INPUT, w, org.apache.tez.mapreduce.input.MRInputLegacy: requested=0, allocated=0
+2015-03-24 00:06:03,465 INFO [main] org.apache.tez.runtime.common.resources.MemoryDistributor: Informing: OUTPUT, Map 2, org.apache.tez.runtime.library.output.OnFileUnorderedKVOutput: requested=0, allocated=0
+2015-03-24 00:06:03,465 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Starting Inputs/Outputs
+2015-03-24 00:06:03,466 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Input: w being auto started by the framework. Subsequent instances will not be auto-started
+2015-03-24 00:06:03,466 INFO [Initializer 0] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Starting Input with src edge: w
+2015-03-24 00:06:03,466 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Num IOs determined for AutoStart: 1
+2015-03-24 00:06:03,466 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Waiting for 1 IOs to start
+2015-03-24 00:06:03,466 INFO [Initializer 0] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Started Input with src edge: w
+2015-03-24 00:06:03,466 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: AutoStartComplete
+2015-03-24 00:06:03,467 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Running task, taskAttemptId=attempt_1427169695135_0001_1_02_000000_0
+2015-03-24 00:06:03,467 INFO [main] org.apache.hadoop.hive.ql.log.PerfLogger: <PERFLOG method=TezRunProcessor from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2015-03-24 00:06:03,467 INFO [main] org.apache.hadoop.hive.ql.exec.tez.TezProcessor: Running task: attempt_1427169695135_0001_1_02_000000_0_10001
+2015-03-24 00:06:03,478 INFO [main] org.apache.tez.mapreduce.input.MRInput: Initialzed MRInput: w
+2015-03-24 00:06:03,478 INFO [main] org.apache.tez.mapreduce.input.MRInput: Initializing RecordReader from event
+2015-03-24 00:06:03,483 INFO [main] org.apache.tez.mapreduce.input.MRInput: Split Details -> SplitClass: org.apache.hadoop.mapred.split.TezGroupedSplit, OldSplit: org.apache.hadoop.mapred.split.TezGroupedSplit@73b044df
+2015-03-24 00:06:03,534 INFO [main] org.apache.hadoop.hive.ql.log.PerfLogger: <PERFLOG method=deserializePlan from=org.apache.hadoop.hive.ql.exec.Utilities>
+2015-03-24 00:06:03,534 INFO [main] org.apache.hadoop.hive.ql.exec.Utilities: Deserializing MapWork via kryo
+2015-03-24 00:06:03,667 INFO [main] org.apache.hadoop.hive.ql.log.PerfLogger: </PERFLOG method=deserializePlan start=1427169963534 end=1427169963667 duration=133 from=org.apache.hadoop.hive.ql.exec.Utilities>
+2015-03-24 00:06:03,769 INFO [main] org.apache.hadoop.hive.ql.io.HiveContextAwareRecordReader: Processing file hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/weight/weight_data.csv
+2015-03-24 00:06:03,769 INFO [main] org.apache.tez.mapreduce.input.MRInput: Processing split: org.apache.hadoop.mapred.split.TezGroupedSplit@73b044df
+2015-03-24 00:06:03,769 INFO [main] org.apache.tez.mapreduce.input.MRInput: Initialized RecordReader from event
+2015-03-24 00:06:03,770 INFO [main] org.apache.hadoop.hive.ql.exec.tez.TezProcessor: Input: w is not cached
+2015-03-24 00:06:03,772 INFO [main] org.apache.hadoop.hive.ql.log.PerfLogger: <PERFLOG method=TezInitializeOperators from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2015-03-24 00:06:03,773 INFO [main] org.apache.hadoop.hive.ql.exec.tez.RecordProcessor: maximum memory = 207093760
+2015-03-24 00:06:03,773 INFO [main] org.apache.hadoop.hive.ql.exec.tez.MapRecordProcessor: Starting Output: Map 2
+2015-03-24 00:06:03,774 INFO [main] org.apache.hadoop.hive.ql.exec.tez.ObjectCache: Adding __MAP_PLAN__ to cache with value org.apache.hadoop.hive.ql.plan.MapWork@67673a2
+2015-03-24 00:06:03,774 INFO [main] org.apache.hadoop.hive.ql.exec.tez.MapRecordProcessor: Plan: org.apache.hadoop.hive.ql.plan.MapWork@67673a2
+2015-03-24 00:06:03,774 INFO [main] org.apache.hadoop.hive.ql.exec.tez.MapRecordProcessor: Alias: w
+2015-03-24 00:06:03,836 INFO [main] org.apache.hadoop.hive.ql.exec.MapOperator: dump TS struct<school_district:string,school_years:string,num_overweight:int,percent_overweight:double,num_obese:int,percent_obese:double,num_overweight_obese:int,percent_overweight_obese:double,grade_level:string,street_address:string,city:string,state:string,zip_code:int>
+2015-03-24 00:06:03,837 INFO [main] org.apache.hadoop.hive.ql.exec.tez.MapRecordProcessor: 
+<MAP>Id =2
+  <Children>
+    <TS>Id =0
+      <Children>
+        <RS>Id =1
+          <Children>
+          <\Children>
+          <Parent>Id = 0 null<\Parent>
+        <\RS>
+      <\Children>
+      <Parent>Id = 2 null<\Parent>
+    <\TS>
+  <\Children>
+  <Parent><\Parent>
+<\MAP>
+2015-03-24 00:06:03,839 INFO [main] org.apache.hadoop.hive.ql.exec.MapOperator: Initializing Self 2 MAP
+2015-03-24 00:06:03,839 INFO [main] org.apache.hadoop.hive.ql.exec.TableScanOperator: Initializing Self 0 TS
+2015-03-24 00:06:03,839 INFO [main] org.apache.hadoop.hive.ql.exec.TableScanOperator: Operator 0 TS initialized
+2015-03-24 00:06:03,839 INFO [main] org.apache.hadoop.hive.ql.exec.TableScanOperator: Initializing children of 0 TS
+2015-03-24 00:06:03,839 INFO [main] org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: Initializing child 1 RS
+2015-03-24 00:06:03,839 INFO [main] org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: Initializing Self 1 RS
+2015-03-24 00:06:03,843 INFO [main] org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: Using tag = 0
+2015-03-24 00:06:03,880 INFO [main] org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: Operator 1 RS initialized
+2015-03-24 00:06:03,880 INFO [main] org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: Initialization Done 1 RS
+2015-03-24 00:06:03,880 INFO [main] org.apache.hadoop.hive.ql.exec.TableScanOperator: Initialization Done 0 TS
+2015-03-24 00:06:03,880 INFO [main] org.apache.hadoop.hive.ql.exec.MapOperator: Initialization Done 2 MAP
+2015-03-24 00:06:03,881 INFO [main] org.apache.hadoop.hive.ql.exec.OperatorUtils: Setting output collector: RS[1] --> Map 2
+2015-03-24 00:06:03,881 INFO [main] org.apache.hadoop.hive.ql.log.PerfLogger: </PERFLOG method=TezInitializeOperators start=1427169963772 end=1427169963881 duration=109 from=org.apache.hadoop.hive.ql.exec.tez.RecordProcessor>
+2015-03-24 00:06:03,881 INFO [main] org.apache.tez.mapreduce.input.MRInput: Creating reader for MRInput: w
+2015-03-24 00:06:03,953 INFO [main] org.apache.hadoop.hive.ql.exec.MapOperator: Processing alias w for file hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/weight
+2015-03-24 00:06:03,958 INFO [main] org.apache.hadoop.hive.ql.exec.tez.RecordProcessor: ExecMapper: processing 1 rows: used memory = 13816456
+2015-03-24 00:06:03,958 INFO [main] org.apache.hadoop.hive.ql.exec.tez.RecordProcessor: ExecMapper: processing 10 rows: used memory = 13816456
+2015-03-24 00:06:03,966 INFO [main] org.apache.hadoop.hive.ql.exec.tez.RecordProcessor: ExecMapper: processing 100 rows: used memory = 13816456
+2015-03-24 00:06:04,042 INFO [main] org.apache.hadoop.hive.ql.exec.tez.RecordProcessor: ExecMapper: processing 1000 rows: used memory = 14111056
+2015-03-24 00:06:04,098 INFO [main] org.apache.hadoop.hive.ql.io.HiveContextAwareRecordReader: Processing file hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/weight/weight_data.csv
+2015-03-24 00:06:04,209 WARN [main] org.apache.hadoop.hive.serde2.lazy.LazyStruct: Extra bytes detected at the end of the row! Ignoring similar problems.
+2015-03-24 00:06:04,214 INFO [main] org.apache.hadoop.hive.ql.log.PerfLogger: </PERFLOG method=TezRunProcessor start=1427169963467 end=1427169964214 duration=747 from=org.apache.hadoop.hive.ql.exec.tez.TezProcessor>
+2015-03-24 00:06:04,214 INFO [main] org.apache.hadoop.hive.ql.exec.MapOperator: 2 finished. closing... 
+2015-03-24 00:06:04,214 INFO [main] org.apache.hadoop.hive.ql.exec.MapOperator: DESERIALIZE_ERRORS:0
+2015-03-24 00:06:04,214 INFO [main] org.apache.hadoop.hive.ql.exec.TableScanOperator: 0 finished. closing... 
+2015-03-24 00:06:04,214 INFO [main] org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: 1 finished. closing... 
+2015-03-24 00:06:04,214 INFO [main] org.apache.hadoop.hive.ql.exec.ReduceSinkOperator: 1 Close done
+2015-03-24 00:06:04,215 INFO [main] org.apache.hadoop.hive.ql.exec.TableScanOperator: 0 Close done
+2015-03-24 00:06:04,215 INFO [main] org.apache.hadoop.hive.ql.exec.MapOperator: 2 Close done
+2015-03-24 00:06:04,215 INFO [main] org.apache.hadoop.hive.ql.exec.tez.RecordProcessor: ExecMapper: processed 3270 rows: used memory = 15293632
+2015-03-24 00:06:04,219 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Closing task, taskAttemptId=attempt_1427169695135_0001_1_02_000000_0
+2015-03-24 00:06:04,257 INFO [main] org.apache.tez.runtime.library.broadcast.output.FileBasedKVWriter: Writing index file: /tmp/hadoop-jaywang/nm-local-dir/usercache/jaywang/appcache/application_1427169695135_0001/output/attempt_1427169695135_0001_1_02_000000_0_10002/file.out.index
+2015-03-24 00:06:04,263 INFO [main] org.apache.tez.runtime.library.output.OnFileUnorderedKVOutput: Closing KVOutput: RawLength: 79792, CompressedLength: 79796
+2015-03-24 00:06:04,265 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Task completed, taskAttemptId=attempt_1427169695135_0001_1_02_000000_0, fatalErrorOccurred=false
+2015-03-24 00:06:04,286 INFO [main] org.apache.tez.runtime.LogicalIOProcessorRuntimeTask: Final Counters : Counters: 18 [[File System Counters FILE: BYTES_READ=0, FILE: BYTES_WRITTEN=79828, FILE: READ_OPS=0, FILE: LARGE_READ_OPS=0, FILE: WRITE_OPS=0, HDFS: BYTES_READ=349363, HDFS: BYTES_WRITTEN=0, HDFS: READ_OPS=2, HDFS: LARGE_READ_OPS=0, HDFS: WRITE_OPS=0][org.apache.tez.common.counters.TaskCounter GC_TIME_MILLIS=17, COMMITTED_HEAP_BYTES=85000192, INPUT_RECORDS_PROCESSED=3270, OUTPUT_RECORDS=3270, OUTPUT_BYTES=73250, OUTPUT_BYTES_WITH_OVERHEAD=79792, OUTPUT_BYTES_PHYSICAL=79796][org.apache.hadoop.hive.ql.exec.MapOperator$Counter DESERIALIZE_ERRORS=0]]
+2015-03-24 00:06:04,391 INFO [main] org.apache.tez.common.TezUtils: Redirecting log files based on addend: attempt_1427169695135_0001_1_02_000000_0_post

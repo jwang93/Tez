@@ -1,0 +1,147 @@
+2015-03-05 02:04:00,146 INFO [main] org.apache.tez.dag.app.DAGAppMaster: Running DAG: select school_years from weigh...'2010-2012'(Stage-1)
+2015-03-05 02:04:00,157 INFO [IPC Server handler 0 on 52661] org.apache.hadoop.ipc.Server: IPC Server handler 0 on 52661, call org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPB.getDAGStatus from 10.190.34.79:52668 Call#614 Retry#0
+org.apache.tez.dag.api.TezException: No running dag at present
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAG(DAGAppMaster.java:1042)
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAGStatus(DAGAppMaster.java:1020)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPBServerImpl.getDAGStatus(DAGClientAMProtocolBlockingPBServerImpl.java:79)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolRPC$DAGClientAMProtocol$2.callBlockingMethod(DAGClientAMProtocolRPC.java:8286)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-03-05 02:04:00,188 INFO [IPC Server handler 0 on 52661] org.apache.hadoop.ipc.Server: IPC Server handler 0 on 52661, call org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPB.getDAGStatus from 10.190.34.79:52669 Call#617 Retry#0
+org.apache.tez.dag.api.TezException: No running dag at present
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAG(DAGAppMaster.java:1042)
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAGStatus(DAGAppMaster.java:1020)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPBServerImpl.getDAGStatus(DAGClientAMProtocolBlockingPBServerImpl.java:79)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolRPC$DAGClientAMProtocol$2.callBlockingMethod(DAGClientAMProtocolRPC.java:8286)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-03-05 02:04:00,216 INFO [IPC Server handler 0 on 52661] org.apache.hadoop.ipc.Server: IPC Server handler 0 on 52661, call org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPB.getDAGStatus from 10.190.34.79:52670 Call#620 Retry#0
+org.apache.tez.dag.api.TezException: No running dag at present
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAG(DAGAppMaster.java:1042)
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAGStatus(DAGAppMaster.java:1020)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPBServerImpl.getDAGStatus(DAGClientAMProtocolBlockingPBServerImpl.java:79)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolRPC$DAGClientAMProtocol$2.callBlockingMethod(DAGClientAMProtocolRPC.java:8286)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-03-05 02:04:00,224 INFO [IPC Server handler 0 on 52661] org.apache.hadoop.ipc.Server: IPC Server handler 0 on 52661, call org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPB.getDAGStatus from 10.190.34.79:52671 Call#623 Retry#0
+org.apache.tez.dag.api.TezException: No running dag at present
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAG(DAGAppMaster.java:1042)
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAGStatus(DAGAppMaster.java:1020)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPBServerImpl.getDAGStatus(DAGClientAMProtocolBlockingPBServerImpl.java:79)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolRPC$DAGClientAMProtocol$2.callBlockingMethod(DAGClientAMProtocolRPC.java:8286)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-03-05 02:04:00,233 INFO [IPC Server handler 0 on 52661] org.apache.hadoop.ipc.Server: IPC Server handler 0 on 52661, call org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPB.getDAGStatus from 10.190.34.79:52672 Call#626 Retry#0
+org.apache.tez.dag.api.TezException: No running dag at present
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAG(DAGAppMaster.java:1042)
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAGStatus(DAGAppMaster.java:1020)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPBServerImpl.getDAGStatus(DAGClientAMProtocolBlockingPBServerImpl.java:79)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolRPC$DAGClientAMProtocol$2.callBlockingMethod(DAGClientAMProtocolRPC.java:8286)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-03-05 02:04:00,402 INFO [main] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:DAG_SUBMITTED]: dagID=dag_1425537877349_0002_1, submitTime=1425539040106
+2015-03-05 02:04:00,466 INFO [main] org.apache.tez.dag.app.dag.impl.VertexImpl: setting additional outputs for vertex initialmap
+2015-03-05 02:04:00,467 INFO [main] org.apache.tez.dag.app.dag.impl.DAGImpl: Using Natural order dag scheduler
+2015-03-05 02:04:00,468 INFO [main] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:DAG_INITIALIZED]: dagID=dag_1425537877349_0002_1, initTime=1425539040402
+2015-03-05 02:04:00,468 INFO [main] org.apache.tez.dag.app.dag.impl.DAGImpl: dag_1425537877349_0002_1 transitioned from NEW to INITED
+2015-03-05 02:04:00,471 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:DAG_STARTED]: dagID=dag_1425537877349_0002_1, startTime=1425539040470
+2015-03-05 02:04:00,471 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.DAGImpl: Added additional resources : [[]] to classpath
+2015-03-05 02:04:00,475 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.DAGImpl: dag_1425537877349_0002_1 transitioned from INITED to RUNNING
+2015-03-05 02:04:00,475 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: Root Inputs exist for Vertex: initialmap : {MRInput=org.apache.tez.dag.app.dag.impl.RootInputLeafOutputDescriptor@2140243b}
+2015-03-05 02:04:00,475 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: Setting vertexManager to ImmediateStartVertexManager for vertex_1425537877349_0002_1_00 [initialmap]
+2015-03-05 02:04:00,504 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: Invoking committer inits for vertex, vertexId=vertex_1425537877349_0002_1_00 [initialmap]
+2015-03-05 02:04:00,504 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: Instantiating committer for output=MROutput, vertexId=vertex_1425537877349_0002_1_00 [initialmap], committerClass=org.apache.tez.mapreduce.committer.MROutputCommitter
+2015-03-05 02:04:00,507 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: Invoking committer init for output=MROutput, vertexId=vertex_1425537877349_0002_1_00 [initialmap]
+2015-03-05 02:04:00,536 INFO [AsyncDispatcher event handler] org.apache.tez.mapreduce.committer.MROutputCommitter: OutputCommitter set in config for outputName=MROutput, vertexName=initialmap, outputCommitterClass=org.apache.hadoop.hive.shims.HadoopShimsSecure$NullOutputCommitter
+2015-03-05 02:04:00,538 INFO [AsyncDispatcher event handler] org.apache.tez.mapreduce.committer.MROutputCommitter: OutputCommitter for outputName=MROutput, vertexName=initialmap, outputCommitterClass=org.apache.hadoop.hive.shims.HadoopShimsSecure$NullOutputCommitter
+2015-03-05 02:04:00,545 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: Invoking committer setup for output=MROutput, vertexId=vertex_1425537877349_0002_1_00 [initialmap]
+2015-03-05 02:04:00,546 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:VERTEX_INITIALIZED]: vertexName=initialmap, vertexId=vertex_1425537877349_0002_1_00, initRequestedTime=1425539040475, initedTime=1425539040545, numTasks=1, processorName=org.apache.tez.mapreduce.processor.map.MapProcessor, additionalInputsCount=1
+2015-03-05 02:04:00,546 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: vertex_1425537877349_0002_1_00 [initialmap] transitioned from NEW to INITED due to event V_INIT
+2015-03-05 02:04:00,549 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:VERTEX_STARTED]: vertexId=vertex_1425537877349_0002_1_00, startRequestedTime=1425539040546, startedTime=1425539040546
+2015-03-05 02:04:00,549 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: vertex_1425537877349_0002_1_00 [initialmap] transitioned from INITED to RUNNING due to event V_START
+2015-03-05 02:04:00,567 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:TASK_STARTED]: vertexName=initialmap, taskId=task_1425537877349_0002_1_00_000000, scheduledTime=1425539040566, launchTime=1425539040566
+2015-03-05 02:04:00,568 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.TaskImpl: task_1425537877349_0002_1_00_000000 Task Transitioned from NEW to SCHEDULED
+2015-03-05 02:04:00,571 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.DAGSchedulerNaturalOrder: Scheduling attempt_1425537877349_0002_1_00_000000_0 at priority 2
+2015-03-05 02:04:00,576 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved 10.190.34.79 to /default-rack
+2015-03-05 02:04:00,579 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.TaskAttemptImpl: attempt_1425537877349_0002_1_00_000000_0 TaskAttempt Transitioned from NEW to START_WAIT due to event TA_SCHEDULE
+2015-03-05 02:04:00,579 INFO [TaskSchedulerEventHandlerThread] org.apache.tez.dag.app.rm.TaskSchedulerEventHandler: Processing the event EventType: S_TA_LAUNCH_REQUEST
+2015-03-05 02:04:00,582 INFO [TaskSchedulerEventHandlerThread] org.apache.hadoop.yarn.util.RackResolver: Resolved 10.190.34.79 to /default-rack
+2015-03-05 02:04:00,588 INFO [TaskSchedulerEventHandlerThread] org.apache.tez.dag.app.rm.TaskScheduler: Allocation request for task: attempt_1425537877349_0002_1_00_000000_0 with request: Capability[<memory:1024, vCores:1>]Priority[2] host: 10.190.34.79 rack: /default-rack
+2015-03-05 02:04:02,600 INFO [AMRM Heartbeater thread] org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl: Received new token for : 10.190.34.79:51016
+2015-03-05 02:04:02,606 INFO [DelayedContainerManager] org.apache.tez.dag.app.rm.TaskScheduler: Assigning container to task, container=Container: [ContainerId: container_1425537877349_0002_01_000002, NodeId: 10.190.34.79:51016, NodeHttpAddress: 10.190.34.79:8042, Resource: <memory:1024, vCores:1>, Priority: 2, Token: Token { kind: ContainerToken, service: 10.190.34.79:51016 }, ], task=attempt_1425537877349_0002_1_00_000000_0, containerHost=10.190.34.79, localityMatchType=NodeLocal, matchedLocation=10.190.34.79, honorLocalityFlags=true, reusedContainer=false, delayedContainers=0, containerResourceMemory=1024, containerResourceVCores=1
+2015-03-05 02:04:02,606 INFO [DelayedContainerManager] org.apache.hadoop.yarn.util.RackResolver: Resolved 10.190.34.79 to /default-rack
+2015-03-05 02:04:02,630 INFO [TaskSchedulerAppCaller #0] org.apache.tez.dag.app.rm.node.AMNodeMap: Adding new node: 10.190.34.79:51016
+2015-03-05 02:04:02,634 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.container.AMContainerHelpers: Adding #1 tokens and #1 secret keys for NM use for launching container
+2015-03-05 02:04:02,635 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.container.AMContainerHelpers: Putting shuffle token in serviceData
+2015-03-05 02:04:02,650 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.container.AMContainerImpl: Sending Launch Request for Container with id: container_1425537877349_0002_01_000002
+2015-03-05 02:04:02,650 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.container.AMContainerImpl: AMContainer container_1425537877349_0002_01_000002 transitioned from ALLOCATED to LAUNCHING via event C_LAUNCH_REQUEST
+2015-03-05 02:04:02,651 INFO [ContainerLauncher #0] org.apache.tez.dag.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_LAUNCH_REQUEST
+2015-03-05 02:04:02,653 INFO [ContainerLauncher #0] org.apache.tez.dag.app.launcher.ContainerLauncherImpl: Launching Container with Id: container_1425537877349_0002_01_000002
+2015-03-05 02:04:02,653 INFO [ContainerLauncher #0] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: Opening proxy : 10.190.34.79:51016
+2015-03-05 02:04:02,710 INFO [ContainerLauncher #0] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:CONTAINER_LAUNCHED]: containerId=container_1425537877349_0002_01_000002, launchTime=1425539042710
+2015-03-05 02:04:02,710 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.container.AMContainerImpl: AMContainer container_1425537877349_0002_01_000002 transitioned from LAUNCHING to IDLE via event C_LAUNCHED
+2015-03-05 02:04:04,938 INFO [Socket Reader #1 for port 52660] SecurityLogger.org.apache.hadoop.ipc.Server: Auth successful for application_1425537877349_0002 (auth:SIMPLE)
+2015-03-05 02:04:04,962 INFO [IPC Server handler 3 on 52660] org.apache.tez.dag.app.rm.container.AMContainerImpl: Assigned taskAttempt + [attempt_1425537877349_0002_1_00_000000_0] to container: [container_1425537877349_0002_01_000002]
+2015-03-05 02:04:04,963 INFO [IPC Server handler 3 on 52660] org.apache.tez.dag.app.rm.container.AMContainerImpl: AMContainer container_1425537877349_0002_01_000002 transitioned from IDLE to RUNNING via event C_PULL_TA
+2015-03-05 02:04:04,964 INFO [IPC Server handler 3 on 52660] org.apache.tez.dag.app.TaskAttemptListenerImpTezDag: Container with id: container_1425537877349_0002_01_000002 given task: attempt_1425537877349_0002_1_00_000000_0
+2015-03-05 02:04:04,964 INFO [AsyncDispatcher event handler] org.apache.hadoop.yarn.util.RackResolver: Resolved 10.190.34.79 to /default-rack
+2015-03-05 02:04:04,966 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.TaskAttemptImpl: TaskAttempt: [attempt_1425537877349_0002_1_00_000000_0] started. Is using containerId: [container_1425537877349_0002_01_000002] on NM: [10.190.34.79:51016]
+2015-03-05 02:04:04,967 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:TASK_ATTEMPT_STARTED]: vertexName=initialmap, taskAttemptId=attempt_1425537877349_0002_1_00_000000_0, startTime=1425539044964, containerId=container_1425537877349_0002_01_000002, nodeId=10.190.34.79:51016, inProgressLogs=10.190.34.79:8042/node/containerlogs/container_1425537877349_0002_01_000002/jaywang, completedLogs=
+2015-03-05 02:04:04,969 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.TaskAttemptImpl: attempt_1425537877349_0002_1_00_000000_0 TaskAttempt Transitioned from START_WAIT to RUNNING due to event TA_STARTED_REMOTELY
+2015-03-05 02:04:04,969 INFO [AsyncDispatcher event handler] org.apache.tez.common.counters.Limits: Counter limits initialized with parameters:  GROUP_NAME_MAX=128, MAX_GROUPS=500, COUNTER_NAME_MAX=64, MAX_COUNTERS=1200
+2015-03-05 02:04:04,974 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.TaskImpl: task_1425537877349_0002_1_00_000000 Task Transitioned from SCHEDULED to RUNNING
+2015-03-05 02:04:06,767 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:TASK_ATTEMPT_FINISHED]: vertexName=initialmap, taskAttemptId=attempt_1425537877349_0002_1_00_000000_0, startTime=1425539044964, finishTime=1425539046753, timeTaken=1789, status=SUCCEEDED, diagnostics=, counters=Counters: 20, org.apache.tez.common.counters.DAGCounter, DATA_LOCAL_TASKS=1, File System Counters, FILE: BYTES_READ=266, FILE: BYTES_WRITTEN=0, FILE: READ_OPS=0, FILE: LARGE_READ_OPS=0, FILE: WRITE_OPS=0, HDFS: BYTES_READ=346469, HDFS: BYTES_WRITTEN=22350, HDFS: READ_OPS=3, HDFS: LARGE_READ_OPS=0, HDFS: WRITE_OPS=2, org.apache.tez.common.counters.TaskCounter, SPLIT_RAW_BYTES=237, GC_TIME_MILLIS=22, COMMITTED_HEAP_BYTES=85000192, INPUT_RECORDS_PROCESSED=0, OUTPUT_RECORDS=0, HIVE, CREATED_FILES=1, org.apache.hadoop.hive.ql.exec.FilterOperator$Counter, FILTERED=1035, PASSED=2235, org.apache.hadoop.hive.ql.exec.MapOperator$Counter, DESERIALIZE_ERRORS=0
+2015-03-05 02:04:06,767 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.TaskAttemptImpl: attempt_1425537877349_0002_1_00_000000_0 TaskAttempt Transitioned from RUNNING to SUCCEEDED due to event TA_DONE
+2015-03-05 02:04:06,767 INFO [TaskSchedulerEventHandlerThread] org.apache.tez.dag.app.rm.TaskSchedulerEventHandler: Processing the event EventType: S_TA_ENDED
+2015-03-05 02:04:06,769 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.TaskImpl: Task succeeded with attempt attempt_1425537877349_0002_1_00_000000_0
+2015-03-05 02:04:06,769 INFO [TaskSchedulerEventHandlerThread] org.apache.tez.dag.app.rm.TaskScheduler: Deallocated task: attempt_1425537877349_0002_1_00_000000_0 from container: container_1425537877349_0002_01_000002
+2015-03-05 02:04:06,769 INFO [TaskSchedulerEventHandlerThread] org.apache.tez.dag.app.rm.TaskScheduler: Releasing unused container: container_1425537877349_0002_01_000002
+2015-03-05 02:04:06,771 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:TASK_FINISHED]: vertexName=initialmap, taskId=task_1425537877349_0002_1_00_000000, startTime=1425539044964, finishTime=1425539046769, timeTaken=1805, status=SUCCEEDED, successfulAttemptID=null, counters=Counters: 20, org.apache.tez.common.counters.DAGCounter, DATA_LOCAL_TASKS=1, File System Counters, FILE: BYTES_READ=266, FILE: BYTES_WRITTEN=0, FILE: READ_OPS=0, FILE: LARGE_READ_OPS=0, FILE: WRITE_OPS=0, HDFS: BYTES_READ=346469, HDFS: BYTES_WRITTEN=22350, HDFS: READ_OPS=3, HDFS: LARGE_READ_OPS=0, HDFS: WRITE_OPS=2, org.apache.tez.common.counters.TaskCounter, SPLIT_RAW_BYTES=237, GC_TIME_MILLIS=22, COMMITTED_HEAP_BYTES=85000192, INPUT_RECORDS_PROCESSED=0, OUTPUT_RECORDS=0, HIVE, CREATED_FILES=1, org.apache.hadoop.hive.ql.exec.FilterOperator$Counter, FILTERED=1035, PASSED=2235, org.apache.hadoop.hive.ql.exec.MapOperator$Counter, DESERIALIZE_ERRORS=0
+2015-03-05 02:04:06,771 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.TaskImpl: task_1425537877349_0002_1_00_000000 Task Transitioned from RUNNING to SUCCEEDED
+2015-03-05 02:04:06,772 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.container.AMContainerImpl: AMContainer container_1425537877349_0002_01_000002 transitioned from RUNNING to IDLE via event C_TA_SUCCEEDED
+2015-03-05 02:04:06,772 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: Num completed Tasks for vertex_1425537877349_0002_1_00 [initialmap] : 1
+2015-03-05 02:04:06,772 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: Vertex succeeded: vertex_1425537877349_0002_1_00 [initialmap]
+2015-03-05 02:04:06,780 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:VERTEX_FINISHED]: vertexName=initialmap, vertexId=vertex_1425537877349_0002_1_00, initRequestedTime=1425539040475, initedTime=1425539040545, startRequestedTime=1425539040546, startedTime=1425539040546, finishTime=1425539046772, timeTaken=6226, status=SUCCEEDED, diagnostics=, counters=Counters: 20, org.apache.tez.common.counters.DAGCounter, DATA_LOCAL_TASKS=1, File System Counters, FILE: BYTES_READ=266, FILE: BYTES_WRITTEN=0, FILE: READ_OPS=0, FILE: LARGE_READ_OPS=0, FILE: WRITE_OPS=0, HDFS: BYTES_READ=346469, HDFS: BYTES_WRITTEN=22350, HDFS: READ_OPS=3, HDFS: LARGE_READ_OPS=0, HDFS: WRITE_OPS=2, org.apache.tez.common.counters.TaskCounter, SPLIT_RAW_BYTES=237, GC_TIME_MILLIS=22, COMMITTED_HEAP_BYTES=85000192, INPUT_RECORDS_PROCESSED=0, OUTPUT_RECORDS=0, HIVE, CREATED_FILES=1, org.apache.hadoop.hive.ql.exec.FilterOperator$Counter, FILTERED=1035, PASSED=2235, org.apache.hadoop.hive.ql.exec.MapOperator$Counter, DESERIALIZE_ERRORS=0, vertexStats=firstTaskStartTime=1425539044964, firstTasksToStart=[ task_1425537877349_0002_1_00_000000 ], lastTaskFinishTime=1425539046753, lastTasksToFinish=[ task_1425537877349_0002_1_00_000000 ], minTaskDuration=1789, maxTaskDuration=1789, avgTaskDuration=1789.0, numSuccessfulTasks=1, shortestDurationTasks=[ task_1425537877349_0002_1_00_000000 ], longestDurationTasks=[ task_1425537877349_0002_1_00_000000 ]
+2015-03-05 02:04:06,781 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.VertexImpl: vertex_1425537877349_0002_1_00 [initialmap] transitioned from RUNNING to SUCCEEDED due to event V_TASK_COMPLETED
+2015-03-05 02:04:06,782 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.container.AMContainerImpl: AMContainer container_1425537877349_0002_01_000002 transitioned from IDLE to STOP_REQUESTED via event C_STOP_REQUEST
+2015-03-05 02:04:06,782 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.DAGImpl: Vertex vertex_1425537877349_0002_1_00 completed., numCompletedVertices=1, numSuccessfulVertices=1, numFailedVertices=0, numKilledVertices=0, numVertices=1
+2015-03-05 02:04:06,782 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.DAGImpl: Calling DAG commit/abort for dag: dag_1425537877349_0002_1
+2015-03-05 02:04:06,784 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:DAG_COMMIT_STARTED]: dagID=dag_1425537877349_0002_1
+2015-03-05 02:04:06,784 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.DAGImpl: Committing output: MROutput for vertex: vertex_1425537877349_0002_1_00
+2015-03-05 02:04:06,794 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.recovery.RecoveryService: DAG completed, dagId=dag_1425537877349_0002_1, queueSize=0
+2015-03-05 02:04:06,805 INFO [AsyncDispatcher event handler] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:dag_1425537877349_0002_1][Event:DAG_FINISHED]: dagId=dag_1425537877349_0002_1, startTime=1425539040470, finishTime=1425539046786, timeTaken=6316, status=SUCCEEDED, diagnostics=, counters=Counters: 21, org.apache.tez.common.counters.DAGCounter, TOTAL_LAUNCHED_TASKS=1, DATA_LOCAL_TASKS=1, File System Counters, FILE: BYTES_READ=266, FILE: BYTES_WRITTEN=0, FILE: READ_OPS=0, FILE: LARGE_READ_OPS=0, FILE: WRITE_OPS=0, HDFS: BYTES_READ=346469, HDFS: BYTES_WRITTEN=22350, HDFS: READ_OPS=3, HDFS: LARGE_READ_OPS=0, HDFS: WRITE_OPS=2, org.apache.tez.common.counters.TaskCounter, SPLIT_RAW_BYTES=237, GC_TIME_MILLIS=22, COMMITTED_HEAP_BYTES=85000192, INPUT_RECORDS_PROCESSED=0, OUTPUT_RECORDS=0, HIVE, CREATED_FILES=1, org.apache.hadoop.hive.ql.exec.FilterOperator$Counter, FILTERED=1035, PASSED=2235, org.apache.hadoop.hive.ql.exec.MapOperator$Counter, DESERIALIZE_ERRORS=0
+2015-03-05 02:04:06,806 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.DAGImpl: DAG: dag_1425537877349_0002_1 finished with state: SUCCEEDED
+2015-03-05 02:04:06,806 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.dag.impl.DAGImpl: dag_1425537877349_0002_1 transitioned from RUNNING to SUCCEEDED
+2015-03-05 02:04:06,806 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.DAGAppMaster: Not a session, AM will unregister as DAG has completed
+2015-03-05 02:04:06,806 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.TaskSchedulerEventHandler: TaskScheduler notified that it should unregister from RM
+2015-03-05 02:04:06,806 INFO [AsyncDispatcher event handler] org.apache.tez.common.TezUtils: Redirecting log files based on addend: dag_1425537877349_0002_1_post

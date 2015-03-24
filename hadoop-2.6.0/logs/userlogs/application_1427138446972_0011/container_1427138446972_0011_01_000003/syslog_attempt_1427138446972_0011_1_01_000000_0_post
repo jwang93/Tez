@@ -1,0 +1,7 @@
+2015-03-23 15:58:25,325 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Attempting to fetch new task
+2015-03-23 15:58:27,315 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Got TaskUpdate: 1990 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1427138446972_0011_2_01_000000_0
+2015-03-23 15:58:27,316 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Refreshing UGI since Credentials have changed
+2015-03-23 15:58:27,316 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Credentials : #Tokens=1, #SecretKeys=0
+2015-03-23 15:58:27,316 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Localizing additional local resources for Task : {}
+2015-03-23 15:58:27,316 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Done localizing additional resources
+2015-03-23 15:58:27,316 INFO [main] org.apache.tez.common.TezUtils: Redirecting log files based on addend: attempt_1427138446972_0011_2_01_000000_0

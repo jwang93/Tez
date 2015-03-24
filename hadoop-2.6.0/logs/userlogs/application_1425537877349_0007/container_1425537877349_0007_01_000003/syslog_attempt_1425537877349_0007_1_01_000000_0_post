@@ -1,0 +1,5 @@
+2015-03-05 02:07:49,004 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Attempting to fetch new task
+2015-03-05 02:07:49,006 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Got TaskUpdate: 2 ms after starting to poll. TaskInfo: shouldDie: true
+2015-03-05 02:07:49,110 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping VertexTask metrics system...
+2015-03-05 02:07:49,111 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system stopped.
+2015-03-05 02:07:49,111 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system shutdown complete.

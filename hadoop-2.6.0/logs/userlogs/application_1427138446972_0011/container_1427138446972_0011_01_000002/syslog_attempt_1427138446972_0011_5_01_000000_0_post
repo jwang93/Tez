@@ -1,0 +1,25 @@
+2015-03-23 15:58:31,802 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Attempting to fetch new task
+2015-03-23 15:58:33,786 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2s
+2015-03-23 15:58:35,834 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Sleeping for 200ms before retrying getTask again. Got null now. Next getTask sleep message after 2s
+2015-03-23 15:58:37,187 INFO [Tez Container Heartbeat Thread [container_1427138446972_0011_01_000002]] org.apache.hadoop.mapred.YarnTezDagChild: Received should die response from AM
+2015-03-23 15:58:37,190 INFO [Tez Container Heartbeat Thread [container_1427138446972_0011_01_000002]] org.apache.hadoop.mapred.YarnTezDagChild: Current task marked as complete. Stopping heartbeat thread and allowing normal container shutdown
+2015-03-23 15:58:37,273 FATAL [main] org.apache.hadoop.mapred.YarnTezDagChild: Error running child : java.io.EOFException: End of File Exception between local host is: "jays-MacBook-Pro-2.local/10.190.40.24"; destination host is: "10.190.40.24":60799; : java.io.EOFException; For more details see:  http://wiki.apache.org/hadoop/EOFException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:791)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:764)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1472)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Invoker.invoke(WritableRpcEngine.java:244)
+	at com.sun.proxy.$Proxy12.getTask(Unknown Source)
+	at org.apache.hadoop.mapred.YarnTezDagChild.main(YarnTezDagChild.java:461)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:375)
+	at org.apache.hadoop.ipc.Client$Connection.receiveRpcResponse(Client.java:1071)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:966)
+
+2015-03-23 15:58:37,274 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping VertexTask metrics system...
+2015-03-23 15:58:37,274 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system stopped.
+2015-03-23 15:58:37,275 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system shutdown complete.

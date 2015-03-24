@@ -1,0 +1,4 @@
+2015-03-23 15:58:26,360 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.DAGAppMaster: Waiting for next DAG to be submitted.
+2015-03-23 15:58:27,141 INFO [IPC Server handler 0 on 60798] org.apache.tez.dag.app.DAGAppMaster: Starting DAG submitted via RPC
+2015-03-23 15:58:27,152 INFO [IPC Server handler 0 on 60798] org.apache.tez.dag.app.DAGAppMaster: Generating DAG graphviz file, dagId=dag_1427138446972_0011_2, filePath=/Users/jaywang/Desktop/data/hadoop-2.6.0/logs/userlogs/application_1427138446972_0011/container_1427138446972_0011_01_000001/dag_1427138446972_0011_2.dot
+2015-03-23 15:58:27,154 INFO [IPC Server handler 0 on 60798] org.apache.tez.common.TezUtils: Redirecting log files based on addend: dag_1427138446972_0011_2

@@ -1,0 +1,13 @@
+2015-03-05 02:07:15,785 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: YarnTezDagChild starting
+2015-03-05 02:07:16,293 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-03-05 02:07:16,609 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-03-05 02:07:17,018 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-03-05 02:07:17,019 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: VertexTask metrics system started
+2015-03-05 02:07:17,268 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: PID, containerIdentifier: 8103, container_1425537877349_0006_01_000002
+2015-03-05 02:07:17,269 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Attempting to fetch new task
+2015-03-05 02:07:17,501 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Got TaskUpdate: 231 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1425537877349_0006_1_00_000000_0
+2015-03-05 02:07:17,505 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Refreshing UGI since Credentials have changed
+2015-03-05 02:07:17,505 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Credentials : #Tokens=1, #SecretKeys=1
+2015-03-05 02:07:17,506 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Localizing additional local resources for Task : {}
+2015-03-05 02:07:17,509 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Done localizing additional resources
+2015-03-05 02:07:17,509 INFO [main] org.apache.tez.common.TezUtils: Redirecting log files based on addend: attempt_1425537877349_0006_1_00_000000_0

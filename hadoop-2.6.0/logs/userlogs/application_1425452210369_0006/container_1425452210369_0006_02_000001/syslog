@@ -1,0 +1,3 @@
+2015-03-04 02:06:43,904 FATAL [main] org.apache.tez.dag.app.DAGAppMaster: Error starting DAGAppMaster
+java.lang.NoSuchMethodError: org.apache.tez.common.TezUtils.addUserSpecifiedTezConfiguration(Lorg/apache/hadoop/conf/Configuration;)V
+	at org.apache.tez.dag.app.DAGAppMaster.main(DAGAppMaster.java:1765)

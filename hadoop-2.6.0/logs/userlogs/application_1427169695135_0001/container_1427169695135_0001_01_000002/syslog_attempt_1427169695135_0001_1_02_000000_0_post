@@ -1,0 +1,5 @@
+2015-03-24 00:06:04,392 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Attempting to fetch new task
+2015-03-24 00:06:05,505 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Got TaskUpdate: 1113 ms after starting to poll. TaskInfo: shouldDie: false, currentTaskAttemptId: attempt_1427169695135_0001_1_00_000000_0
+2015-03-24 00:06:05,506 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Localizing additional local resources for Task : {}
+2015-03-24 00:06:05,506 INFO [main] org.apache.hadoop.mapred.YarnTezDagChild: Done localizing additional resources
+2015-03-24 00:06:05,506 INFO [main] org.apache.tez.common.TezUtils: Redirecting log files based on addend: attempt_1427169695135_0001_1_00_000000_0
