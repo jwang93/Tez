@@ -1,0 +1,14 @@
+Here are the paths you will need for your Hadoop / Hive / Tez setup. Some paths have been configured correctly already; others will require you to make modifications based on where your systems are installed. Add these statements to wherever you keep your paths (i.e. .bash_profile or .bashrc).
+
+
+export HADOOP_HOME='[PATH_TO_HADOOP_DIR]/hadoop-2.6.0'
+export HADOOP_PREFIX=$HADOOP_HOME #same as Hadoop Home 
+export HADOOP_MAPRED_HOME= $HADOOP_HOME # same as Hadoop Home
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home" # use your path to your java version 
+
+export TEZ_INSTALL_DIR='[PATH_TO_TEZ_DIR]/tez-0.4.1-incubating'
+export TEZ_CONF_DIR=$TEZ_INSTALL_DIR/conf
+export TEZ_JARS=$(echo "$TEZ_INSTALL_DIR"/*.jar | tr ' ' ':'):$(echo "$TEZ_INSTALL_DIR"/lib/*.jar | tr ' ' ':')
+export HIVE_AUX_JARS_PATH="${TEZ_JARS}:${TEZ_CONF_DIR}"
+
+export HADOOP_CLASSPATH="${TEZ_CONF_DIR}:${TEZ_JARS}/*:${TEZ_JARS}/lib/*:${HADOOP_CLASSPATH}"
