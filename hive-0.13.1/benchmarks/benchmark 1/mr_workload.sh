@@ -1,5 +1,7 @@
 echo 'Benchmark 1 - MR workload'
 echo 'running overweight_zips_mr.sql script in /queries'
+echo 'setting up tables'
+bin/hive -f queries/create_tables.sql
 echo 'run 1'
 bin/hive -f queries/overweight_zips_mr.sql 
 echo 'run 2'
