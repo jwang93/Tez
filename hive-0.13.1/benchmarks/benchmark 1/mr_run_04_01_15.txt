@@ -1,0 +1,213 @@
+Benchmark 1 - MR workload
+running overweight_zips_mr.sql script in /queries
+run 1
+
+Logging initialized using configuration in jar:file:/Users/jaywang/Desktop/data/hive-0.13.1/lib/hive-common-0.13.1.jar!/hive-log4j.properties
+2015-04-01 00:20:02.601 java[30888:217981] Unable to load realm info from SCDynamicStore
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0005, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0005/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0005
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:20:17,994 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:20:25,337 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:20:30,542 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0005
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code: 	1254.6468685961365
+Time taken: 22.792 seconds, Fetched: 1 row(s)
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0006, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0006/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0006
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:20:43,015 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:20:50,291 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:20:55,462 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0006
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code (top overweight): 	NULL
+Time taken: 24.855 seconds, Fetched: 1 row(s)
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0007, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0007/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0007
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:21:07,171 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:21:13,385 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:21:18,553 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0007
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code (least overweight): 	1454.0622953780796
+Time taken: 23.095 seconds, Fetched: 1 row(s)
+run 2
+
+Logging initialized using configuration in jar:file:/Users/jaywang/Desktop/data/hive-0.13.1/lib/hive-common-0.13.1.jar!/hive-log4j.properties
+2015-04-01 00:21:21.232 java[32022:222768] Unable to load realm info from SCDynamicStore
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0008, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0008/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0008
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:21:36,902 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:21:43,140 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:21:49,363 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0008
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code: 	1254.6468685961365
+Time taken: 23.137 seconds, Fetched: 1 row(s)
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0009, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0009/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0009
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:22:00,147 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:22:06,383 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:22:11,565 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0009
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code (top overweight): 	NULL
+Time taken: 22.136 seconds, Fetched: 1 row(s)
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0010, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0010/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0010
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:22:22,853 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:22:30,134 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:22:35,314 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0010
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code (least overweight): 	1454.0622953780796
+Time taken: 23.736 seconds, Fetched: 1 row(s)
+run 3
+
+Logging initialized using configuration in jar:file:/Users/jaywang/Desktop/data/hive-0.13.1/lib/hive-common-0.13.1.jar!/hive-log4j.properties
+2015-04-01 00:22:38.023 java[33005:227222] Unable to load realm info from SCDynamicStore
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0011, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0011/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0011
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:22:53,062 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:23:00,363 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:23:06,571 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0011
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code: 	1254.6468685961365
+Time taken: 23.57 seconds, Fetched: 1 row(s)
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0012, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0012/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0012
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:23:17,331 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:23:23,577 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:23:28,742 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0012
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code (top overweight): 	NULL
+Time taken: 22.095 seconds, Fetched: 1 row(s)
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427860868005_0013, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1427860868005_0013/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1427860868005_0013
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-01 00:23:39,756 Stage-1 map = 0%,  reduce = 0%
+2015-04-01 00:23:47,029 Stage-1 map = 100%,  reduce = 0%
+2015-04-01 00:23:52,209 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1427860868005_0013
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Average population density per zip code (least overweight): 	1454.0622953780796
+Time taken: 23.487 seconds, Fetched: 1 row(s)
+Benchmark 1 - MR complete
