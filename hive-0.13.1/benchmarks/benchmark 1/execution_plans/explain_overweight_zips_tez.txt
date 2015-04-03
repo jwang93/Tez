@@ -1,0 +1,161 @@
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+    Tez
+      Edges:
+        Reducer 2 <- Map 1 (SIMPLE_EDGE)
+      DagName: :1
+      Vertices:
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: population_density_zip
+                  Statistics: Num rows: 122062 Data size: 976497 Basic stats: COMPLETE Column stats: NONE
+                  Select Operator
+                    expressions: pop_density_sq_mi (type: double)
+                    outputColumnNames: pop_density_sq_mi
+                    Statistics: Num rows: 122062 Data size: 976497 Basic stats: COMPLETE Column stats: NONE
+                    Group By Operator
+                      aggregations: avg(pop_density_sq_mi)
+                      mode: hash
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 0 Basic stats: PARTIAL Column stats: NONE
+                      Reduce Output Operator
+                        sort order: 
+                        Statistics: Num rows: 1 Data size: 0 Basic stats: PARTIAL Column stats: NONE
+                        value expressions: _col0 (type: struct<count:bigint,sum:double,input:double>)
+        Reducer 2 
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: avg(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                Select Operator
+                  expressions: 'Average population density per zip code: ' (type: string), _col0 (type: double)
+                  outputColumnNames: _col0, _col1
+                  Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                  File Output Operator
+                    compressed: false
+                    Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                    table:
+                        input format: org.apache.hadoop.mapred.TextInputFormat
+                        output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                        serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+
+Time taken: 1.726 seconds, Fetched: 52 row(s)
+OK
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+    Tez
+      Edges:
+        Reducer 2 <- Map 1 (SIMPLE_EDGE)
+      DagName: jaywang_20150403010505_76b6ad42-5647-4493-afd1-4024b124f84a:2
+      Vertices:
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: top_overweight_zips
+                  Statistics: Num rows: 100 Data size: 2159 Basic stats: COMPLETE Column stats: NONE
+                  Select Operator
+                    expressions: pop_density_sq_mi (type: double)
+                    outputColumnNames: pop_density_sq_mi
+                    Statistics: Num rows: 100 Data size: 2159 Basic stats: COMPLETE Column stats: NONE
+                    Group By Operator
+                      aggregations: avg(pop_density_sq_mi)
+                      mode: hash
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 0 Basic stats: PARTIAL Column stats: NONE
+                      Reduce Output Operator
+                        sort order: 
+                        Statistics: Num rows: 1 Data size: 0 Basic stats: PARTIAL Column stats: NONE
+                        value expressions: _col0 (type: struct<count:bigint,sum:double,input:double>)
+        Reducer 2 
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: avg(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                Select Operator
+                  expressions: 'Average population density per zip code (top overweight): ' (type: string), _col0 (type: double)
+                  outputColumnNames: _col0, _col1
+                  Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                  File Output Operator
+                    compressed: false
+                    Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                    table:
+                        input format: org.apache.hadoop.mapred.TextInputFormat
+                        output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                        serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+
+Time taken: 0.085 seconds, Fetched: 52 row(s)
+OK
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-0 is a root stage
+
+STAGE PLANS:
+  Stage: Stage-1
+    Tez
+      Edges:
+        Reducer 2 <- Map 1 (SIMPLE_EDGE)
+      DagName: jaywang_20150403010505_7d921a50-6060-4051-a5cf-d40a91fd585e:3
+      Vertices:
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: least_overweight_zips
+                  Statistics: Num rows: 100 Data size: 2187 Basic stats: COMPLETE Column stats: NONE
+                  Select Operator
+                    expressions: pop_density_sq_mi (type: double)
+                    outputColumnNames: pop_density_sq_mi
+                    Statistics: Num rows: 100 Data size: 2187 Basic stats: COMPLETE Column stats: NONE
+                    Group By Operator
+                      aggregations: avg(pop_density_sq_mi)
+                      mode: hash
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 0 Basic stats: PARTIAL Column stats: NONE
+                      Reduce Output Operator
+                        sort order: 
+                        Statistics: Num rows: 1 Data size: 0 Basic stats: PARTIAL Column stats: NONE
+                        value expressions: _col0 (type: struct<count:bigint,sum:double,input:double>)
+        Reducer 2 
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: avg(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                Select Operator
+                  expressions: 'Average population density per zip code (least overweight): ' (type: string), _col0 (type: double)
+                  outputColumnNames: _col0, _col1
+                  Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                  File Output Operator
+                    compressed: false
+                    Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                    table:
+                        input format: org.apache.hadoop.mapred.TextInputFormat
+                        output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                        serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+
+Time taken: 0.09 seconds, Fetched: 52 row(s)
