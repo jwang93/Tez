@@ -1,0 +1,17 @@
+TABLE NAME: weight
+TABLE SIZE: 3270 records
+
+SCHEMA: 
+school_district     	string              	                    
+school_years        	string              	                    
+num_overweight      	int                 	                    
+percent_overweight  	double              	                    
+num_obese           	int                 	                    
+percent_obese       	double              	                    
+num_overweight_obese	int                 	                    
+percent_overweight_obese	double              	                    
+grade_level         	string              	                    
+street_address      	string              	                    
+city                	string              	                    
+state               	string              	                    
+zip_code            	int     

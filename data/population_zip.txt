@@ -1,0 +1,7 @@
+TABLE NAME: population_zip
+TABLE SIZE: 33092
+
+SCHEMA: 
+zip_code            	int                 	                    
+population          	int   
+
