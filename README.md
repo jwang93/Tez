@@ -1,5 +1,5 @@
 # Tez
-This purpose of this project is to quickly help data engineers learn about Tez in a hands on way. We have provided detailed instructions on how to install and get started with Tez as well as some benchmarks that compare Tez with MapReduce.  
+This purpose of this project is to  help data engineers quickly learn about Tez in a hands on way. We have provided detailed instructions on how to install and get started with Tez as well as some benchmarks that compare Tez with MapReduce.  
 
 **This repository contains**:  
 1) Instructions on Tez Installation and Set Up   
