@@ -1,0 +1,18 @@
+TABLE NAME: income
+TABLE SIZE: 32561 records
+
+SCHEMA:
+age                  int
+workclass            string
+fnlwgt               int
+education            string
+education-num        int
+marital-status       string
+occupation           string
+relationship         string
+race                 string
+sex                  string  
+capital-gain         int
+capital-loss         int
+hours-per-week       int
+native-country       string
