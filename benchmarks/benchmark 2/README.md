@@ -31,4 +31,14 @@ Hive on Tez resulted in three distinct Tez DAGs - one for each of the AVG() quer
 3) Average population density per zip code (least overweight): 	1454.0622953780796  
 **Time taken: 0.803 seconds**, Fetched: 1 row(s)  
 
-As can be seen, there is not a significant time difference between the first two jobs for MR (23.528) vs. Tez (16.498), although Tez is still clearly faster. What is particularly interesting is that the second and third Tez jobs run lightning fast compared to MR, where there is no performance gain. This is due to the fact that Tez can reuse containers, saving time by cutting down on process startup and initialization and bypassing the YARN ResourceManager. http://hortonworks.com/blog/re-using-containers-in-apache-tez/ 
+As can be seen, there is not a significant time difference between the first two jobs for MR (23.528) vs. Tez (16.498), although Tez is still clearly faster. What is particularly interesting is that the second and third Tez jobs run lightning fast compared to MR, where there is no performance gain. This is due to the fact that Tez can reuse containers, saving time by cutting down on process startup and initialization and bypassing the YARN ResourceManager. 
+
+For validation, here is a different ordering of the same job:  
+1) Average population density per zip code (top overweight): 	953.66536454547  
+**Time taken: 19.933 seconds**, Fetched: 1 row(s)  
+2) Average population density per zip code (least overweight): 	1454.0622953780796  
+**Time taken: 1.338 seconds**, Fetched: 1 row(s)  
+3) Average population density per zip code: 	1254.6468685961365  
+**Time taken: 1.24 seconds**, Fetched: 1 row(s)  
+
+You can read more about reusing containers in Tez at: http://hortonworks.com/blog/re-using-containers-in-apache-tez/ 
