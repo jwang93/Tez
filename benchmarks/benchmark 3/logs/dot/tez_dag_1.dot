@@ -2,11 +2,13 @@ digraph _1 {
 graph [ label="_1", fontsize=24, fontname=Helvetica];
 node [fontsize=12, fontname=Helvetica];
 edge [fontsize=9, fontcolor=blue, fontname=Arial];
-"_1.Reducer_2" [ label = "Reducer_2[ReduceTezProcessor]" ];
-"_1.Reducer_2" -> "_1.Reducer_2_out_Reducer_2" [ label = "Output [outputClass=MROutput,\n initializer=]" ];
-"_1.Reducer_2_out_Reducer_2" [ label = "Reducer_2[out_Reducer_2]", shape = "box" ];
 "_1.Map_1" [ label = "Map_1[MapTezProcessor]" ];
 "_1.Map_1" -> "_1.Reducer_2" [ label = "[input=OnFileSortedOutput,\n output=ShuffledMergedInputLegacy,\n dataMovement=SCATTER_GATHER,\n schedulingType=SEQUENTIAL]" ];
-"_1.Map_1_population_density_zip" [ label = "Map_1[population_density_zip]", shape = "box" ];
-"_1.Map_1_population_density_zip" -> "_1.Map_1" [ label = "Input [inputClass=MRInputLegacy,\n initializer=MRInputAMSplitGenerator]" ];
+"_1.Reducer_3" [ label = "Reducer_3[ReduceTezProcessor]" ];
+"_1.Reducer_3" -> "_1.Reducer_3_out_Reducer_3" [ label = "Output [outputClass=MROutput,\n initializer=]" ];
+"_1.Map_1_income" [ label = "Map_1[income]", shape = "box" ];
+"_1.Map_1_income" -> "_1.Map_1" [ label = "Input [inputClass=MRInputLegacy,\n initializer=MRInputAMSplitGenerator]" ];
+"_1.Reducer_2" [ label = "Reducer_2[ReduceTezProcessor]" ];
+"_1.Reducer_2" -> "_1.Reducer_3" [ label = "[input=OnFileSortedOutput,\n output=ShuffledMergedInputLegacy,\n dataMovement=SCATTER_GATHER,\n schedulingType=SEQUENTIAL]" ];
+"_1.Reducer_3_out_Reducer_3" [ label = "Reducer_3[out_Reducer_3]", shape = "box" ];
 }

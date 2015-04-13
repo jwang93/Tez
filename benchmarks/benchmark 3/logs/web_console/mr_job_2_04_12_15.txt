@@ -1,0 +1,80 @@
+Name: SELECT native_country, AVG(hours_per_...DESC(Stage-2)
+
+Total Resource Preempted:	<memory:0, vCores:0>
+Total Number of Non-AM Containers Preempted:	0
+Total Number of AM Containers Preempted:	0
+Resource Preempted from Current Attempt:	<memory:0, vCores:0>
+Number of Non-AM Containers Preempted from Current Attempt:	0
+Aggregate Resource Allocation:	60712 MB-seconds, 34 vcore-seconds
+
+
+syslog: 
+
+2015-04-12 22:41:54,352 INFO [main] org.apache.tez.dag.app.DAGAppMaster: Created DAGAppMaster for application appattempt_1428892285457_0002_000001
+2015-04-12 22:41:54,552 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-12 22:41:54,705 INFO [main] org.apache.tez.dag.app.DAGAppMaster: Adding session token to jobTokenSecretManager for application
+2015-04-12 22:41:54,709 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.rm.container.AMContainerEventType for class org.apache.tez.dag.app.rm.container.AMContainerMap
+2015-04-12 22:41:54,710 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.rm.node.AMNodeEventType for class org.apache.tez.dag.app.rm.node.AMNodeMap
+2015-04-12 22:41:54,712 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.DAGAppMasterEventType for class org.apache.tez.dag.app.DAGAppMaster$DAGAppMasterEventHandler
+2015-04-12 22:41:54,712 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.DAGEventType for class org.apache.tez.dag.app.DAGAppMaster$DagEventDispatcher
+2015-04-12 22:41:54,713 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.VertexEventType for class org.apache.tez.dag.app.DAGAppMaster$VertexEventDispatcher
+2015-04-12 22:41:54,713 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.TaskEventType for class org.apache.tez.dag.app.DAGAppMaster$TaskEventDispatcher
+2015-04-12 22:41:54,714 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.dag.event.TaskAttemptEventType for class org.apache.tez.dag.app.DAGAppMaster$TaskAttemptEventDispatcher
+2015-04-12 22:41:54,716 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.rm.AMSchedulerEventType for class org.apache.tez.dag.app.rm.TaskSchedulerEventHandler
+2015-04-12 22:41:54,717 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.tez.dag.app.rm.NMCommunicatorEventType for class org.apache.tez.dag.app.launcher.ContainerLauncherImpl
+2015-04-12 22:41:55,319 INFO [main] org.apache.tez.dag.app.rm.node.AMNodeMap: blacklistDisablePercent is 33, blacklistingEnabled: true, maxTaskFailuresPerNode: 3
+2015-04-12 22:41:55,319 INFO [main] org.apache.tez.dag.app.launcher.ContainerLauncherImpl: Upper limit on the thread pool size is 500
+2015-04-12 22:41:55,319 INFO [main] org.apache.tez.dag.history.HistoryEventHandler: Initializing HistoryEventHandler
+2015-04-12 22:41:55,321 INFO [main] org.apache.tez.dag.history.recovery.RecoveryService: Initializing RecoveryService
+2015-04-12 22:41:55,322 INFO [main] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:N/A][Event:AM_LAUNCHED]: appAttemptId=appattempt_1428892285457_0002_000001, appSubmitTime=1428892906602, launchTime=1428892914345
+2015-04-12 22:41:55,326 INFO [ServiceThread:org.apache.tez.dag.history.HistoryEventHandler] org.apache.tez.dag.history.HistoryEventHandler: Starting HistoryEventHandler
+2015-04-12 22:41:55,326 INFO [ServiceThread:org.apache.tez.dag.history.HistoryEventHandler] org.apache.tez.dag.history.recovery.RecoveryService: Starting RecoveryService
+2015-04-12 22:41:55,333 INFO [ServiceThread:org.apache.tez.dag.app.launcher.ContainerLauncherImpl] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+2015-04-12 22:41:55,338 INFO [ServiceThread:org.apache.tez.dag.app.TaskAttemptListenerImpTezDag] org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-04-12 22:41:55,338 INFO [ServiceThread:DAGClientRPCServer] org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-04-12 22:41:55,389 INFO [Socket Reader #1 for port 61651] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 61651
+2015-04-12 22:41:55,389 INFO [Socket Reader #1 for port 61652] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 61652
+2015-04-12 22:41:55,413 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-04-12 22:41:55,413 INFO [IPC Server listener on 61652] org.apache.hadoop.ipc.Server: IPC Server listener on 61652: starting
+2015-04-12 22:41:55,414 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-04-12 22:41:55,414 INFO [IPC Server listener on 61651] org.apache.hadoop.ipc.Server: IPC Server listener on 61651: starting
+2015-04-12 22:41:55,414 INFO [ServiceThread:DAGClientRPCServer] org.apache.tez.dag.api.client.DAGClientServer: Instantiated DAGClientRPCServer at jays-MacBook-Pro-2.local/10.190.39.136:61652
+2015-04-12 22:41:55,437 INFO [ServiceThread:org.apache.tez.dag.app.rm.TaskSchedulerEventHandler] org.apache.tez.dag.app.rm.TaskScheduler: TaskScheduler initialized with configuration: maxRMHeartbeatInterval: 1000, containerReuseEnabled: true, reuseRackLocal: true, reuseNonLocal: false, localitySchedulingDelay: 1000, sessionDelay=10000
+2015-04-12 22:41:55,498 INFO [ServiceThread:org.apache.tez.dag.app.rm.TaskSchedulerEventHandler] org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8030
+2015-04-12 22:41:55,694 INFO [AMRM Callback Handler Thread] org.apache.tez.dag.app.rm.TaskScheduler: App total resource memory: 6144 cpu: 0 taskAllocations: 0
+2015-04-12 22:41:55,696 INFO [AsyncDispatcher event handler] org.apache.tez.dag.app.rm.node.AMNodeMap: Num cluster nodes = 1
+2015-04-12 22:41:55,738 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-04-12 22:41:56,175 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-04-12 22:41:56,175 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: DAGAppMaster metrics system started
+2015-04-12 22:41:56,178 INFO [main] org.apache.tez.dag.history.HistoryEventHandler: [HISTORY][DAG:N/A][Event:AM_STARTED]: appAttemptId=appattempt_1428892285457_0002_000001, startTime=1428892916178
+2015-04-12 22:41:56,178 INFO [main] org.apache.tez.dag.app.DAGAppMaster: In Non-Session mode.
+2015-04-12 22:41:56,205 INFO [IPC Server handler 0 on 61652] org.apache.hadoop.ipc.Server: IPC Server handler 0 on 61652, call org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPB.getDAGStatus from 10.190.39.136:61655 Call#676 Retry#0
+org.apache.tez.dag.api.TezException: No running dag at present
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAG(DAGAppMaster.java:1042)
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAGStatus(DAGAppMaster.java:1020)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPBServerImpl.getDAGStatus(DAGClientAMProtocolBlockingPBServerImpl.java:79)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolRPC$DAGClientAMProtocol$2.callBlockingMethod(DAGClientAMProtocolRPC.java:8286)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-04-12 22:41:56,219 INFO [IPC Server handler 0 on 61652] org.apache.hadoop.ipc.Server: IPC Server handler 0 on 61652, call org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPB.getDAGStatus from 10.190.39.136:61657 Call#679 Retry#0
+org.apache.tez.dag.api.TezException: No running dag at present
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAG(DAGAppMaster.java:1042)
+	at org.apache.tez.dag.app.DAGAppMaster$DAGClientHandler.getDAGStatus(DAGAppMaster.java:1020)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolBlockingPBServerImpl.getDAGStatus(DAGClientAMProtocolBlockingPBServerImpl.java:79)
+	at org.apache.tez.dag.api.client.rpc.DAGClientAMProtocolRPC$DAGClientAMProtocol$2.callBlockingMethod(DAGClientAMProtocolRPC.java:8286)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:394)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-04-12 22:41:56,240 INFO [main] org.apache.tez.dag.app.DAGAppMaster: Generating DAG graphviz file, dagId=dag_1428892285457_0002_1, filePath=/Users/jaywang/Desktop/data/hadoop-2.6.0/logs/userlogs/application_1428892285457_0002/container_1428892285457_0002_01_000001/dag_1428892285457_0002_1.dot
+2015-04-12 22:41:56,242 INFO [main] org.apache.tez.common.TezUtils: Redirecting log files based on addend: dag_1428892285457_0002_1

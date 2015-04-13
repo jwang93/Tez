@@ -1,0 +1,102 @@
+Benchmark 3 - MR workload
+running income_mr.sql script in /queries
+setting up tables
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-12 22:40:51.899 java[22436:1232075] Unable to load realm info from SCDynamicStore
+OK
+Time taken: 1.007 seconds
+OK
+Time taken: 1.051 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/income.csv
+Copying file: file:/Users/jaywang/Desktop/Tez/data/income.csv
+Loading data to table default.income
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/income
+Table default.income stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 2.255 seconds
+-- running ---
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-12 22:41:08.597 java[22612:1232609] Unable to load realm info from SCDynamicStore
+Total jobs = 2
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1428892285457_0001, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1428892285457_0001/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1428892285457_0001
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-12 22:41:31,483 Stage-1 map = 0%,  reduce = 0%
+2015-04-12 22:41:38,910 Stage-1 map = 100%,  reduce = 0%
+2015-04-12 22:41:45,127 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1428892285457_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1428892285457_0002, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1428892285457_0002/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1428892285457_0002
+Hadoop job information for Stage-2: number of mappers: 0; number of reducers: 0
+2015-04-12 22:41:56,339 Stage-2 map = 0%,  reduce = 0%
+2015-04-12 22:42:03,627 Stage-2 map = 100%,  reduce = 0%
+2015-04-12 22:42:09,841 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_1428892285457_0002
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Job 1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+ Thailand	45.44444444444444
+ France	45.06896551724138
+ Yugoslavia	44.5625
+ Greece	44.241379310344826
+ Iran	43.97674418604651
+ Japan	43.693548387096776
+ Dominican-Republic	42.47142857142857
+ Ireland	42.416666666666664
+ South	42.4125
+ Portugal	41.891891891891895
+ Outlying-US(Guam-USVI-etc)	41.857142857142854
+ England	41.833333333333336
+ Italy	41.602739726027394
+ India	41.53
+ ?	41.51286449399657
+ Scotland	41.25
+ Germany	41.01459854014598
+ Hong	40.9
+ Cambodia	40.89473684210526
+ United-States	40.44775454233802
+ Canada	40.40495867768595
+ Mexico	40.34059097978227
+ Laos	40.333333333333336
+ Holand-Netherlands	40.0
+ Philippines	39.5959595959596
+ Ecuador	39.57142857142857
+ Guatemala	39.234375
+ Cuba	39.1578947368421
+ Columbia	39.067796610169495
+ Taiwan	38.88235294117647
+ Jamaica	38.592592592592595
+ Puerto-Rico	38.57017543859649
+ Poland	38.333333333333336
+ China	37.78666666666667
+ Trinadad&Tobago	37.36842105263158
+ Vietnam	37.343283582089555
+ Haiti	36.90909090909091
+ El-Salvador	36.79245283018868
+ Honduras	36.30769230769231
+ Nicaragua	36.1764705882353
+ Hungary	35.61538461538461
+ Peru	35.38709677419355
+Time taken: 56.064 seconds, Fetched: 42 row(s)
+Benchmark 3 - MR complete
