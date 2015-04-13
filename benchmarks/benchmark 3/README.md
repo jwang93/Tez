@@ -1,44 +1,29 @@
-#Benchmark 2 
-This benchmark tests the aggregation function AVG(), running it over three datasets. 
+#Benchmark 3 
+This benchmark demonstrates Tez's performance on MRR (Map-Reduce-Reduce) jobs. An MRR job is a job that can naturally be comprised of a map phase followed by two reduce phases. An example would be performing a ```group by``` followed by an ```order by```. 
+
+*Sample Query of an MRR job*:  
+```SELECT DeptName, COUNT(*) as c FROM EmployeeTable GROUP BY DeptName ORDER BY c;```
+
+Unfortunately, the bare MapReduce model does not allow for a singular MRR job, as the MapReduce paradigm mandates that every job consist of one map and one reduce phase. Therefore, an MRR job takes two MR jobs in MapReduce. Additionally, data needs to be written to HDFS between the two jobs. Thus, we should expect Tez to significantly outperform MapReduce for these types of workloads.   
 
 **Background**:  
-The idea for this workload came from the question of whether there was any correlation between being overweight and coming from a densely populated area. The hypothesis was that if you came from a less densely populated area, you would be more predisposed to drive as a method of transportation as opposed to walking / biking. For this benchmark, we are looking at data on children who live in New York. 
+Using the income dataset (*income.csv*), we run a query to see which nationality group on average works the most number of hours per week.  
 
 **Datasets**:  
-The two datasets for this benchmark are *weight_data* and *population_density*. The **weight_data** dataset contains figures on the number of overweight and obese children for a given zip code in New York. The **population** density dataset has figures on the number of people for a given zip code. These datasets are located in the */data* directory. In that directory, you will also find the data schema for each dataset as well as the table sizes. 
+The dataset used for this benchmark is **income**. The schema for this dataset can be found at ```/tez/data/income_schema.txt```. 
 
 **Benchmark**:  
-The workloads for these benchmarks are **mr_workload.sh** and **tez_workload.sh**. There is no difference between these jobs except one uses the MR execution engine and the other uses the Tez execution engine. The main script of this workload is the **overweight\_zips\_{mr/tez}.sql** script, which runs the AVG() aggregation across three datasets. 
+The workloads for these benchmarks are **mr_workload.sh** and **tez_workload.sh**. There is no difference between these jobs except one uses the MR execution engine and the other uses the Tez execution engine. The main script that contains the query for this workload is the **income_{mr/tez}.sql** script. 
 
 **Results**:  
-The results can be found under the */logs* directory under */benchmark 2*. There are both console logs (terminal output) and web-console (from the YARN cluster web interface) logs.   
+The results can be found under the */logs* directory under */benchmark 3*. There are both console logs (terminal output) and web-console (from the YARN cluster web interface) logs.   
 
 *Map Reduce*:  
-Hive on MR resulted in three distinct MR jobs - one for each of the AVG() queries.   
-1) Average population density per zip code: 	1254.6468685961365  
-**Time taken: 23.528 seconds**, Fetched: 1 row(s)  
-2) Average population density per zip code (top overweight): 	953.66536454547  
-**Time taken: 23.181 seconds**, Fetched: 1 row(s)  
-3) Average population density per zip code (least overweight): 	1454.0622953780796  
-**Time taken: 24.864 seconds**, Fetched: 1 row(s)  
+As we expected, Hive on MR resulted in two distinct MR jobs - one for the group_by operation and one for the order_by operation.  
+Total time taken: **56.064 seconds**, Fetched: 42 row(s) 
 
 *Tez*:  
-Hive on Tez resulted in three distinct Tez DAGs - one for each of the AVG() queries.   
-1) Average population density per zip code: 	1254.6468685961365  
-**Time taken: 16.498 seconds**, Fetched: 1 row(s)  
-2) Average population density per zip code (top overweight): 	953.66536454547  
-**Time taken: 0.891 seconds**, Fetched: 1 row(s)  
-3) Average population density per zip code (least overweight): 	1454.0622953780796  
-**Time taken: 0.803 seconds**, Fetched: 1 row(s)  
+Hive on Tez resulted in one distinct Tez DAG, validating Tez's ability to encapsulate an MRR job into one single entity.  
+Total time taken: **16.387 seconds**, Fetched: 42 row(s)
 
-As can be seen, there is not a significant time difference between the first two jobs for MR (23.528) vs. Tez (16.498), although Tez is still clearly faster. What is particularly interesting is that the second and third Tez jobs run lightning fast compared to MR, where there is no performance gain. This is due to the fact that Tez can reuse containers, saving time by cutting down on process startup and initialization and bypassing the YARN ResourceManager. 
-
-For validation, here is a different ordering of the same job:  
-1) Average population density per zip code (top overweight): 	953.66536454547  
-**Time taken: 19.933 seconds**, Fetched: 1 row(s)  
-2) Average population density per zip code (least overweight): 	1454.0622953780796  
-**Time taken: 1.338 seconds**, Fetched: 1 row(s)  
-3) Average population density per zip code: 	1254.6468685961365  
-**Time taken: 1.24 seconds**, Fetched: 1 row(s)  
-
-You can read more about reusing containers in Tez at: http://hortonworks.com/blog/re-using-containers-in-apache-tez/ 
+Ultimately, MRR-type jobs are clearly one area where Tez clearly dominates MR. Tez runs in less than one third of the time as its MR counterpart. This is because Tez can complete the workload with one job whereas MR requires two. Additionally, MR needs to write to HDFS between jobs while Tez can stream data across nodes without writes to HDFS.     
