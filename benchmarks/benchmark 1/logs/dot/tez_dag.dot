@@ -1,0 +1,14 @@
+digraph _1 {
+graph [ label="_1", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"_1.Map_2" [ label = "Map_2[MapTezProcessor]" ];
+"_1.Map_2" -> "_1.Map_2_out_Map_2" [ label = "Output [outputClass=MROutput,\n initializer=]" ];
+"_1.Map_1" [ label = "Map_1[MapTezProcessor]" ];
+"_1.Map_1" -> "_1.Map_2" [ label = "[input=OnFileUnorderedKVOutput,\n output=ShuffledUnorderedKVInput,\n dataMovement=BROADCAST,\n schedulingType=SEQUENTIAL]" ];
+"_1.Map_2_out_Map_2" [ label = "Map_2[out_Map_2]", shape = "box" ];
+"_1.Map_1_w" [ label = "Map_1[w]", shape = "box" ];
+"_1.Map_1_w" -> "_1.Map_1" [ label = "Input [inputClass=MRInputLegacy,\n initializer=MRInputAMSplitGenerator]" ];
+"_1.Map_2_p" [ label = "Map_2[p]", shape = "box" ];
+"_1.Map_2_p" -> "_1.Map_2" [ label = "Input [inputClass=MRInputLegacy,\n initializer=MRInputAMSplitGenerator]" ];
+}

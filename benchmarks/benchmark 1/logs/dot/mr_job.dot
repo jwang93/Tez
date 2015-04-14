@@ -1,0 +1,10 @@
+digraph SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_ {
+graph [ label="SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_.initialmap" [ label = "initialmap[MapProcessor]" ];
+"SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_.initialmap" -> "SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_.initialmap_MROutput" [ label = "Output [outputClass=MROutputLegacy,\n initializer=MROutputCommitter]" ];
+"SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_.initialmap_MROutput" [ label = "initialmap[MROutput]", shape = "box" ];
+"SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_.initialmap_MRInput" [ label = "initialmap[MRInput]", shape = "box" ];
+"SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_.initialmap_MRInput" -> "SELECT_p_zip_code_p_pop_density_sq_mi_10_Stage_3_.initialmap" [ label = "Input [inputClass=MRInputLegacy,\n initializer=]" ];
+}

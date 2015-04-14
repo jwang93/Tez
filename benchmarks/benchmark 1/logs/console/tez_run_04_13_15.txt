@@ -1,0 +1,59 @@
+Benchmark 1 - Tez workload
+running join_weight_zips_tez.sql script in /queries
+setting up tables
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-13 22:25:44.660 java[40694:1525058] Unable to load realm info from SCDynamicStore
+OK
+Time taken: 1.764 seconds
+OK
+Time taken: 0.211 seconds
+Copying data from file:/Users/jaywang/Desktop/data/input_data/weight_data.csv
+Copying file: file:/Users/jaywang/Desktop/data/input_data/weight_data.csv
+Loading data to table default.weight
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/weight
+Table default.weight stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.541 seconds
+OK
+Time taken: 0.099 seconds
+OK
+Time taken: 0.045 seconds
+Copying data from file:/Users/jaywang/Desktop/data/input_data/population_density_zip.csv
+Copying file: file:/Users/jaywang/Desktop/data/input_data/population_density_zip.csv
+Loading data to table default.population_density_zip
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/population_density_zip
+Table default.population_density_zip stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.234 seconds
+-- running ---
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-13 22:25:55.334 java[40751:1525427] Unable to load realm info from SCDynamicStore
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (application id: application_1428977411788_0002)
+
+Map 1: -/-	Map 2: -/-	
+Map 1: 0/1	Map 2: 0/1	
+Map 1: 0/1	Map 2: 0/1	
+Map 1: 1/1	Map 2: 0/1	
+Map 1: 1/1	Map 2: 1/1	
+Status: Finished successfully
+OK
+6390	58.18540434	NULL
+6390	58.18540434	NULL
+6390	58.18540434	NULL
+10502	2588.207547	0.26
+10502	2588.207547	0.26
+10502	2588.207547	0.26
+10502	2588.207547	0.22
+10502	2588.207547	0.18
+10502	2588.207547	0.29
+10504	490.5718322	0.21
+Time taken: 17.065 seconds, Fetched: 10 row(s)
+Benchmark 1 - Tez complete

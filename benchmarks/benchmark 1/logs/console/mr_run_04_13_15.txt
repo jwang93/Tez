@@ -1,0 +1,68 @@
+Benchmark 1 - MR workload
+running join_weight_zips_mr.sql script in /queries
+setting up tables
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-13 22:23:59.552 java[40070:1521758] Unable to load realm info from SCDynamicStore
+OK
+Time taken: 3.237 seconds
+OK
+Time taken: 0.528 seconds
+Copying data from file:/Users/jaywang/Desktop/data/input_data/weight_data.csv
+Copying file: file:/Users/jaywang/Desktop/data/input_data/weight_data.csv
+Loading data to table default.weight
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/weight
+Table default.weight stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 1.744 seconds
+OK
+Time taken: 0.094 seconds
+OK
+Time taken: 0.032 seconds
+Copying data from file:/Users/jaywang/Desktop/data/input_data/population_density_zip.csv
+Copying file: file:/Users/jaywang/Desktop/data/input_data/population_density_zip.csv
+Loading data to table default.population_density_zip
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/population_density_zip
+Table default.population_density_zip stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.242 seconds
+-- running ---
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-13 22:24:20.197 java[40133:1522225] Unable to load realm info from SCDynamicStore
+Total jobs = 1
+2015-04-13 22:24:33.674 java[40193:1522409] Unable to load realm info from SCDynamicStore
+15/04/13 22:24:33 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Execution log at: /var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T//jaywang/jaywang_20150413222424_96088f94-53e3-43e7-bf66-276881586c4f.log
+2015-04-13 10:24:34	Starting to launch local task to process map join;	maximum memory = 530186240
+2015-04-13 10:24:35	Dump the side-table into file: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-13_22-24-25_314_928855796978728225-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile00--.hashtable
+2015-04-13 10:24:35	Uploaded 1 File to: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-13_22-24-25_314_928855796978728225-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile00--.hashtable (52140 bytes)
+2015-04-13 10:24:35	End of local task; Time Taken: 1.247 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1428977411788_0001, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1428977411788_0001/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1428977411788_0001
+Hadoop job information for Stage-3: number of mappers: 0; number of reducers: 0
+2015-04-13 22:24:52,962 Stage-3 map = 0%,  reduce = 0%
+2015-04-13 22:25:00,266 Stage-3 map = 100%,  reduce = 0%
+Ended Job = job_1428977411788_0001
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+6390	58.18540434	NULL
+6390	58.18540434	NULL
+6390	58.18540434	NULL
+10502	2588.207547	0.26
+10502	2588.207547	0.26
+10502	2588.207547	0.26
+10502	2588.207547	0.22
+10502	2588.207547	0.18
+10502	2588.207547	0.29
+10504	490.5718322	0.21
+Time taken: 35.097 seconds, Fetched: 10 row(s)
+Benchmark 1 - MR complete
