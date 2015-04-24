@@ -1,0 +1,29 @@
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-24 15:32:01.547 java[93077:985764] Unable to load realm info from SCDynamicStore
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (application id: application_1429902648313_0003)
+
+Map 1: -/-	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 1/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 1/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 1/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 1/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 2/2	Reducer 2: 0/1	Reducer 3: 0/1	
+Map 1: 2/2	Reducer 2: 1/1	Reducer 3: 0/1	
+Map 1: 2/2	Reducer 2: 1/1	Reducer 3: 1/1	
+Status: Finished successfully
+Loading data to table default.q1_pricing_summary_report
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/user/hive/warehouse/q1_pricing_summary_report
+Table default.q1_pricing_summary_report stats: [numFiles=1, numRows=4, totalSize=573, rawDataSize=569]
+OK
+Time taken: 39.867 seconds

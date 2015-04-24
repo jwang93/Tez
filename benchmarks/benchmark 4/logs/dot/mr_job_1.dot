@@ -1,0 +1,12 @@
+digraph INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_ {
+graph [ label="INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.initialmap_MRInput" [ label = "initialmap[MRInput]", shape = "box" ];
+"INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.initialmap_MRInput" -> "INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.initialmap" [ label = "Input [inputClass=MRInputLegacy,\n initializer=]" ];
+"INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.finalreduce_MROutput" [ label = "finalreduce[MROutput]", shape = "box" ];
+"INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.initialmap" [ label = "initialmap[MapProcessor]" ];
+"INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.initialmap" -> "INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.finalreduce" [ label = "[input=OnFileSortedOutput,\n output=ShuffledMergedInputLegacy,\n dataMovement=SCATTER_GATHER,\n schedulingType=SEQUENTIAL]" ];
+"INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.finalreduce" [ label = "finalreduce[ReduceProcessor]" ];
+"INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.finalreduce" -> "INSERT_OVERWRITE_TABLE_q1_pri_L_LINESTATUS_Stage_1_.finalreduce_MROutput" [ label = "Output [outputClass=MROutputLegacy,\n initializer=MROutputCommitter]" ];
+}

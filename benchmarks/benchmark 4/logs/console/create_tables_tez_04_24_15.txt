@@ -1,0 +1,18 @@
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-24 15:14:09.110 java[91190:975292] Unable to load realm info from SCDynamicStore
+OK
+Time taken: 1.897 seconds
+OK
+Time taken: 0.359 seconds
+OK
+Time taken: 0.264 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/lineitem.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/lineitem.tbl
+Loading data to table default.lineitem
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/lineitem
+Table default.lineitem stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 14.066 seconds
+OK
+Time taken: 0.037 seconds
