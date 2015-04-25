@@ -4,7 +4,7 @@ This purpose of this project is to  help data engineers quickly learn about Tez 
 **This repository contains**:  
 1) Instructions on Tez Installation and Set Up   
 2) Tutorial Walk Through of running Hive on Tez   
-3) Benchmarks comparing the Tez execution engine against MR  
+3) Benchmarks (*including TPC-H queries*) comparing the Tez execution engine against MR 
 
 **Systems**:  
 *Hadoop 2.6.0, Hive 0.13.1, Tez 0.4.1*     
