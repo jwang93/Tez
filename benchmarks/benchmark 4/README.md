@@ -40,5 +40,4 @@ Tez
 
 
 **Analysis**:  
-
-Ultimately, MRR-type jobs are clearly one area where Tez clearly dominates MR. Tez runs in less than one third of the time as its MR counterpart. This is because Tez can complete the workload with one job whereas MR requires two. Additionally, MR needs to write to HDFS between jobs while Tez can stream data across nodes without writes to HDFS.     
+In this benchmark, Tez outperforms MR in both the create_table and the pricing_summary_report. Tez's performance in the create_table demonstrates the IO speedups incorporated into Tez over MR. As for the pricing_summary_report, Tez's ability to run MRR-type jobs allows it to heavily outperform MR. Tez can complete the workload with one job whereas MR requires two due to the rigidity of the map-reduce paradigm. Additionally, MR needs to write to HDFS between jobs while Tez can stream data across nodes without writes to HDFS.     
