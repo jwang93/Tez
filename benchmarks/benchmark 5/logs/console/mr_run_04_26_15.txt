@@ -1,0 +1,209 @@
+Benchmark 5 - MR workload
+TPC-H Query 2
+-- running ---
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-26 14:04:18.177 java[39505:1315504] Unable to load realm info from SCDynamicStore
+OK
+Time taken: 1.432 seconds
+OK
+Time taken: 0.024 seconds
+OK
+Time taken: 0.014 seconds
+OK
+Time taken: 0.014 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.013 seconds
+OK
+Time taken: 0.011 seconds
+OK
+Time taken: 0.013 seconds
+OK
+Time taken: 1.296 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/part.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/part.tbl
+Loading data to table default.part
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/part
+Table default.part stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 2.954 seconds
+OK
+Time taken: 0.038 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/supplier.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/supplier.tbl
+Loading data to table default.supplier
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/supplier
+Table default.supplier stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.358 seconds
+OK
+Time taken: 0.032 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/partsupp.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/partsupp.tbl
+Loading data to table default.partsupp
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/partsupp
+Table default.partsupp stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 7.837 seconds
+OK
+Time taken: 0.038 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/nation.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/nation.tbl
+Loading data to table default.nation
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/nation
+Table default.nation stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.518 seconds
+OK
+Time taken: 0.031 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/region.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/region.tbl
+Loading data to table default.region
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/region
+Table default.region stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.294 seconds
+OK
+Time taken: 0.135 seconds
+OK
+Time taken: 0.04 seconds
+OK
+Time taken: 0.032 seconds
+Total jobs = 7
+2015-04-26 14:05:05.440 java[39558:1315781] Unable to load realm info from SCDynamicStore
+15/04/26 14:05:05 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Execution log at: /var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T//jaywang/jaywang_20150426140404_7639f445-d38c-463b-b75d-1af15c87dbb6.log
+2015-04-26 02:05:06	Starting to launch local task to process map join;	maximum memory = 530186240
+2015-04-26 02:05:12	Dump the side-table into file: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-04-44_739_5865558587330269291-1/-local-10013/HashTable-Stage-15/MapJoin-mapfile41--.hashtable
+2015-04-26 02:05:12	Uploaded 1 File to: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-04-44_739_5865558587330269291-1/-local-10013/HashTable-Stage-15/MapJoin-mapfile41--.hashtable (1412557 bytes)
+2015-04-26 02:05:12	Dump the side-table into file: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-04-44_739_5865558587330269291-1/-local-10013/HashTable-Stage-15/MapJoin-mapfile51--.hashtable
+2015-04-26 02:05:12	Uploaded 1 File to: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-04-44_739_5865558587330269291-1/-local-10013/HashTable-Stage-15/MapJoin-mapfile51--.hashtable (278 bytes)
+2015-04-26 02:05:12	End of local task; Time Taken: 5.562 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 7
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1430071439826_0001, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1430071439826_0001/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1430071439826_0001
+Hadoop job information for Stage-15: number of mappers: 0; number of reducers: 0
+2015-04-26 14:05:41,109 Stage-15 map = 0%,  reduce = 0%
+2015-04-26 14:06:16,338 Stage-15 map = 100%,  reduce = 0%
+Ended Job = job_1430071439826_0001
+Stage-19 is filtered out by condition resolver.
+Stage-20 is selected by condition resolver.
+Stage-2 is filtered out by condition resolver.
+2015-04-26 14:06:30.128 java[40008:1318164] Unable to load realm info from SCDynamicStore
+15/04/26 14:06:30 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Execution log at: /var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T//jaywang/jaywang_20150426140404_7639f445-d38c-463b-b75d-1af15c87dbb6.log
+2015-04-26 02:06:31	Starting to launch local task to process map join;	maximum memory = 530186240
+2015-04-26 02:06:35	Dump the side-table into file: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-04-44_739_5865558587330269291-1/-local-10011/HashTable-Stage-13/MapJoin-mapfile30--.hashtable
+2015-04-26 02:06:36	Uploaded 1 File to: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-04-44_739_5865558587330269291-1/-local-10011/HashTable-Stage-13/MapJoin-mapfile30--.hashtable (324834 bytes)
+2015-04-26 02:06:36	End of local task; Time Taken: 4.278 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 3 out of 7
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1430071439826_0002, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1430071439826_0002/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1430071439826_0002
+Hadoop job information for Stage-13: number of mappers: 0; number of reducers: 0
+2015-04-26 14:06:47,629 Stage-13 map = 0%,  reduce = 0%
+2015-04-26 14:07:06,355 Stage-13 map = 100%,  reduce = 0%
+Ended Job = job_1430071439826_0002
+Stage-17 is selected by condition resolver.
+Stage-18 is filtered out by condition resolver.
+Stage-3 is filtered out by condition resolver.
+2015-04-26 14:07:24.882 java[40266:1319663] Unable to load realm info from SCDynamicStore
+15/04/26 14:07:24 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Execution log at: /var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T//jaywang/jaywang_20150426140404_7639f445-d38c-463b-b75d-1af15c87dbb6.log
+2015-04-26 02:07:26	Starting to launch local task to process map join;	maximum memory = 530186240
+2015-04-26 02:07:34	Dump the side-table into file: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-04-44_739_5865558587330269291-1/-local-10005/HashTable-Stage-9/MapJoin-mapfile01--.hashtable
+2015-04-26 02:07:35	Uploaded 1 File to: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-04-44_739_5865558587330269291-1/-local-10005/HashTable-Stage-9/MapJoin-mapfile01--.hashtable (30567 bytes)
+2015-04-26 02:07:35	End of local task; Time Taken: 8.773 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 5 out of 7
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1430071439826_0003, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1430071439826_0003/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1430071439826_0003
+Hadoop job information for Stage-9: number of mappers: 0; number of reducers: 0
+2015-04-26 14:07:47,583 Stage-9 map = 0%,  reduce = 0%
+2015-04-26 14:08:01,164 Stage-9 map = 100%,  reduce = 0%
+Ended Job = job_1430071439826_0003
+Loading data to table default.q2_minimum_cost_supplier_tmp1
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/user/hive/warehouse/q2_minimum_cost_supplier_tmp1
+Table default.q2_minimum_cost_supplier_tmp1 stats: [numFiles=1, numRows=642, totalSize=109507, rawDataSize=108865]
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Job 1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Job 2:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Time taken: 196.758 seconds
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1430071439826_0004, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1430071439826_0004/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1430071439826_0004
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-04-26 14:08:12,391 Stage-1 map = 0%,  reduce = 0%
+2015-04-26 14:08:42,449 Stage-1 map = 100%,  reduce = 0%
+2015-04-26 14:08:53,472 Stage-1 map = 100%,  reduce = 100%
+Ended Job = job_1430071439826_0004
+Loading data to table default.q2_minimum_cost_supplier_tmp2
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/user/hive/warehouse/q2_minimum_cost_supplier_tmp2
+Table default.q2_minimum_cost_supplier_tmp2 stats: [numFiles=1, numRows=460, totalSize=6083, rawDataSize=5623]
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Time taken: 53.507 seconds
+Total jobs = 1
+2015-04-26 14:09:13.525 java[40827:1323576] Unable to load realm info from SCDynamicStore
+15/04/26 14:09:13 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Execution log at: /var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T//jaywang/jaywang_20150426140808_86649186-33a6-4ca1-ba5a-662a6a9b660e.log
+2015-04-26 02:09:14	Starting to launch local task to process map join;	maximum memory = 530186240
+2015-04-26 02:09:16	Dump the side-table into file: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-08-55_102_2325392639804371446-1/-local-10003/HashTable-Stage-2/MapJoin-mapfile61--.hashtable
+2015-04-26 02:09:16	Uploaded 1 File to: file:/var/folders/vn/66fny8zd71gfb023jkcsj2kh0000gn/T/jaywang/hive_2015-04-26_14-08-55_102_2325392639804371446-1/-local-10003/HashTable-Stage-2/MapJoin-mapfile61--.hashtable (13513 bytes)
+2015-04-26 02:09:16	End of local task; Time Taken: 1.393 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1430071439826_0005, Tracking URL = http://jays-MacBook-Pro-2.local:8088/proxy/application_1430071439826_0005/
+Kill Command = /Users/jaywang/Desktop/Tez/hadoop-2.6.0/bin/hadoop job  -kill job_1430071439826_0005
+Hadoop job information for Stage-2: number of mappers: 0; number of reducers: 0
+2015-04-26 14:09:32,064 Stage-2 map = 0%,  reduce = 0%
+2015-04-26 14:09:39,417 Stage-2 map = 100%,  reduce = 0%
+2015-04-26 14:09:46,691 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_1430071439826_0005
+Loading data to table default.q2_minimum_cost_supplier
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/user/hive/warehouse/q2_minimum_cost_supplier
+Table default.q2_minimum_cost_supplier stats: [numFiles=1, numRows=100, totalSize=16329, rawDataSize=16229]
+MapReduce Jobs Launched: 
+Job 0:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Time taken: 51.929 seconds
+Benchmark 5 - MR complete

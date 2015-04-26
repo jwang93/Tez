@@ -1,0 +1,153 @@
+Benchmark 5 - Tez workload
+TPC-H Query 2
+-- running ---
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-26 14:25:59.307 java[41471:1334650] Unable to load realm info from SCDynamicStore
+OK
+Time taken: 4.102 seconds
+OK
+Time taken: 0.129 seconds
+OK
+Time taken: 0.104 seconds
+OK
+Time taken: 0.107 seconds
+OK
+Time taken: 0.092 seconds
+OK
+Time taken: 0.735 seconds
+OK
+Time taken: 0.113 seconds
+OK
+Time taken: 0.107 seconds
+OK
+Time taken: 0.806 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/part.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/part.tbl
+Loading data to table default.part
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/part
+Table default.part stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 3.596 seconds
+OK
+Time taken: 0.035 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/supplier.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/supplier.tbl
+Loading data to table default.supplier
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/supplier
+Table default.supplier stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.302 seconds
+OK
+Time taken: 0.034 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/partsupp.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/partsupp.tbl
+Loading data to table default.partsupp
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/partsupp
+Table default.partsupp stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 7.943 seconds
+OK
+Time taken: 0.042 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/nation.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/nation.tbl
+Loading data to table default.nation
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/nation
+Table default.nation stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.353 seconds
+OK
+Time taken: 0.031 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/region.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/region.tbl
+Loading data to table default.region
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/region
+Table default.region stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 0.245 seconds
+OK
+Time taken: 0.036 seconds
+OK
+Time taken: 0.024 seconds
+OK
+Time taken: 0.026 seconds
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (application id: application_1430071439826_0006)
+
+Map 1: -/-	Map 2: -/-	Map 3: -/-	Map 4: -/-	Map 5: -/-	
+Map 1: -/-	Map 2: -/-	Map 3: 0/1	Map 4: -/-	Map 5: -/-	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 0/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 1/1	Map 3: 0/1	Map 4: 0/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 1/1	Map 3: 0/1	Map 4: 1/1	Map 5: 0/2	
+Map 1: 0/1	Map 2: 1/1	Map 3: 1/1	Map 4: 1/1	Map 5: 0/2	
+Map 1: 1/1	Map 2: 1/1	Map 3: 1/1	Map 4: 1/1	Map 5: 0/2	
+Map 1: 1/1	Map 2: 1/1	Map 3: 1/1	Map 4: 1/1	Map 5: 0/2	
+Map 1: 1/1	Map 2: 1/1	Map 3: 1/1	Map 4: 1/1	Map 5: 0/2	
+Map 1: 1/1	Map 2: 1/1	Map 3: 1/1	Map 4: 1/1	Map 5: 0/2	
+Map 1: 1/1	Map 2: 1/1	Map 3: 1/1	Map 4: 1/1	Map 5: 2/2	
+Status: Finished successfully
+Loading data to table default.q2_minimum_cost_supplier_tmp1
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/user/hive/warehouse/q2_minimum_cost_supplier_tmp1
+Table default.q2_minimum_cost_supplier_tmp1 stats: [numFiles=2, numRows=642, totalSize=109507, rawDataSize=108865]
+OK
+Time taken: 83.469 seconds
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (application id: application_1430071439826_0006)
+
+Map 1: -/-	Reducer 2: 0/1	
+Map 1: 0/1	Reducer 2: 0/1	
+Map 1: 0/1	Reducer 2: 0/1	
+Map 1: 0/1	Reducer 2: 0/1	
+Map 1: 0/1	Reducer 2: 0/1	
+Map 1: 0/1	Reducer 2: 0/1	
+Map 1: 0/1	Reducer 2: 0/1	
+Map 1: 0/1	Reducer 2: 0/1	
+Map 1: 1/1	Reducer 2: 0/1	
+Map 1: 1/1	Reducer 2: 1/1	
+Status: Finished successfully
+Loading data to table default.q2_minimum_cost_supplier_tmp2
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/user/hive/warehouse/q2_minimum_cost_supplier_tmp2
+Table default.q2_minimum_cost_supplier_tmp2 stats: [numFiles=1, numRows=460, totalSize=6083, rawDataSize=5623]
+OK
+Time taken: 21.403 seconds
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (application id: application_1430071439826_0006)
+
+Map 1: -/-	Map 2: -/-	Reducer 3: 0/1	
+Map 1: 1/1	Map 2: 0/1	Reducer 3: 0/1	
+Map 1: 1/1	Map 2: 1/1	Reducer 3: 0/1	
+Map 1: 1/1	Map 2: 1/1	Reducer 3: 1/1	
+Status: Finished successfully
+Loading data to table default.q2_minimum_cost_supplier
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/user/hive/warehouse/q2_minimum_cost_supplier
+Table default.q2_minimum_cost_supplier stats: [numFiles=1, numRows=100, totalSize=16329, rawDataSize=16229]
+OK
+Time taken: 1.887 seconds
+Benchmark 5 - Tez complete

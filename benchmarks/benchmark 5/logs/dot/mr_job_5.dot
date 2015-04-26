@@ -1,0 +1,12 @@
+digraph insert_overwrite_table_q2_minimum_cost_100_Stage_2_ {
+graph [ label="insert_overwrite_table_q2_minimum_cost_100_Stage_2_", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"insert_overwrite_table_q2_minimum_cost_100_Stage_2_.initialmap_MRInput" [ label = "initialmap[MRInput]", shape = "box" ];
+"insert_overwrite_table_q2_minimum_cost_100_Stage_2_.initialmap_MRInput" -> "insert_overwrite_table_q2_minimum_cost_100_Stage_2_.initialmap" [ label = "Input [inputClass=MRInputLegacy,\n initializer=]" ];
+"insert_overwrite_table_q2_minimum_cost_100_Stage_2_.finalreduce_MROutput" [ label = "finalreduce[MROutput]", shape = "box" ];
+"insert_overwrite_table_q2_minimum_cost_100_Stage_2_.finalreduce" [ label = "finalreduce[ReduceProcessor]" ];
+"insert_overwrite_table_q2_minimum_cost_100_Stage_2_.finalreduce" -> "insert_overwrite_table_q2_minimum_cost_100_Stage_2_.finalreduce_MROutput" [ label = "Output [outputClass=MROutputLegacy,\n initializer=MROutputCommitter]" ];
+"insert_overwrite_table_q2_minimum_cost_100_Stage_2_.initialmap" [ label = "initialmap[MapProcessor]" ];
+"insert_overwrite_table_q2_minimum_cost_100_Stage_2_.initialmap" -> "insert_overwrite_table_q2_minimum_cost_100_Stage_2_.finalreduce" [ label = "[input=OnFileSortedOutput,\n output=ShuffledMergedInputLegacy,\n dataMovement=SCATTER_GATHER,\n schedulingType=SEQUENTIAL]" ];
+}

@@ -1,0 +1,12 @@
+User:	jaywang
+Name:	insert overwrite table q2_minimum...'%BRASS'(Stage-15)
+Application Type:	TEZ
+Application Tags:	
+State:	FINISHED
+FinalStatus:	SUCCEEDED
+Started:	26-Apr-2015 14:05:18
+Elapsed:	1mins, 3sec
+Tracking URL:	History
+
+Aggregate Resource Allocation:	158729 MB-seconds, 91 vcore-seconds
+

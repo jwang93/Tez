@@ -1,0 +1,10 @@
+digraph insert_overwrite_table_q2_minimum_BRASS_Stage_15_ {
+graph [ label="insert_overwrite_table_q2_minimum_BRASS_Stage_15_", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"insert_overwrite_table_q2_minimum_BRASS_Stage_15_.initialmap_MRInput" [ label = "initialmap[MRInput]", shape = "box" ];
+"insert_overwrite_table_q2_minimum_BRASS_Stage_15_.initialmap_MRInput" -> "insert_overwrite_table_q2_minimum_BRASS_Stage_15_.initialmap" [ label = "Input [inputClass=MRInputLegacy,\n initializer=]" ];
+"insert_overwrite_table_q2_minimum_BRASS_Stage_15_.initialmap" [ label = "initialmap[MapProcessor]" ];
+"insert_overwrite_table_q2_minimum_BRASS_Stage_15_.initialmap" -> "insert_overwrite_table_q2_minimum_BRASS_Stage_15_.initialmap_MROutput" [ label = "Output [outputClass=MROutputLegacy,\n initializer=MROutputCommitter]" ];
+"insert_overwrite_table_q2_minimum_BRASS_Stage_15_.initialmap_MROutput" [ label = "initialmap[MROutput]", shape = "box" ];
+}
