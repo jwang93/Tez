@@ -1,0 +1,11 @@
+User:	jaywang
+Name:	Insert overwrite table q3_shipping_prio...10(Stage-4)
+Application Type:	TEZ
+Application Tags:	
+State:	FINISHED
+FinalStatus:	SUCCEEDED
+Started:	27-Apr-2015 12:09:11
+Elapsed:	24sec
+Tracking URL:	History
+
+Aggregate Resource Allocation:	61512 MB-seconds, 34 vcore-seconds

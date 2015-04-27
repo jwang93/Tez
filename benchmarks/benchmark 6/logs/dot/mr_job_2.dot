@@ -1,0 +1,10 @@
+digraph Insert_overwrite_table_q3_shipping_prio_10_Stage_9_ {
+graph [ label="Insert_overwrite_table_q3_shipping_prio_10_Stage_9_", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_9_.initialmap_MROutput" [ label = "initialmap[MROutput]", shape = "box" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_9_.initialmap_MRInput" [ label = "initialmap[MRInput]", shape = "box" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_9_.initialmap_MRInput" -> "Insert_overwrite_table_q3_shipping_prio_10_Stage_9_.initialmap" [ label = "Input [inputClass=MRInputLegacy,\n initializer=]" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_9_.initialmap" [ label = "initialmap[MapProcessor]" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_9_.initialmap" -> "Insert_overwrite_table_q3_shipping_prio_10_Stage_9_.initialmap_MROutput" [ label = "Output [outputClass=MROutputLegacy,\n initializer=MROutputCommitter]" ];
+}

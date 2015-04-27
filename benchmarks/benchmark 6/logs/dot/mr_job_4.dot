@@ -1,0 +1,12 @@
+digraph Insert_overwrite_table_q3_shipping_prio_10_Stage_4_ {
+graph [ label="Insert_overwrite_table_q3_shipping_prio_10_Stage_4_", fontsize=24, fontname=Helvetica];
+node [fontsize=12, fontname=Helvetica];
+edge [fontsize=9, fontcolor=blue, fontname=Arial];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.initialmap_MRInput" [ label = "initialmap[MRInput]", shape = "box" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.initialmap_MRInput" -> "Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.initialmap" [ label = "Input [inputClass=MRInputLegacy,\n initializer=]" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.finalreduce" [ label = "finalreduce[ReduceProcessor]" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.finalreduce" -> "Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.finalreduce_MROutput" [ label = "Output [outputClass=MROutputLegacy,\n initializer=MROutputCommitter]" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.finalreduce_MROutput" [ label = "finalreduce[MROutput]", shape = "box" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.initialmap" [ label = "initialmap[MapProcessor]" ];
+"Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.initialmap" -> "Insert_overwrite_table_q3_shipping_prio_10_Stage_4_.finalreduce" [ label = "[input=OnFileSortedOutput,\n output=ShuffledMergedInputLegacy,\n dataMovement=SCATTER_GATHER,\n schedulingType=SEQUENTIAL]" ];
+}

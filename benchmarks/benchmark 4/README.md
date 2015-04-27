@@ -34,9 +34,9 @@ Time taken: **39.867 seconds**
 
 **Job Execution Plans**:  
 MR  
-![MR Job](https://github.com/jwang93/Tez/blob/master/graphs/TPC-H_Q1_MR.png)  
+![MR Job](https://github.com/jwang93/Tez/blob/master/graphs/execution_plans/TPC-H_Q1_MR.png)  
 Tez  
-![Tez Job](https://github.com/jwang93/Tez/blob/master/graphs/TPC-H_Q1_Tez.png)
+![Tez Job](https://github.com/jwang93/Tez/blob/master/graphs/execution_plans/TPC-H_Q1_Tez.png)
 
 
 **Analysis**:  

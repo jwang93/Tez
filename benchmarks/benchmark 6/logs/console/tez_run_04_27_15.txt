@@ -1,0 +1,93 @@
+Benchmark 6 - Tez workload
+TPC-H Query 3
+-- running ---
+
+Logging initialized using configuration in file:/Users/jaywang/Desktop/Tez/hive-0.13.1/conf/hive-log4j.properties
+2015-04-27 12:16:09.331 java[53047:1515304] Unable to load realm info from SCDynamicStore
+OK
+Time taken: 3.54 seconds
+OK
+Time taken: 0.183 seconds
+OK
+Time taken: 0.148 seconds
+OK
+Time taken: 0.236 seconds
+OK
+Time taken: 0.592 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/lineitem.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/lineitem.tbl
+Loading data to table default.lineitem
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/lineitem
+Table default.lineitem stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 44.677 seconds
+OK
+Time taken: 0.039 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/orders.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/orders.tbl
+Loading data to table default.orders
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/orders
+Table default.orders stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 9.061 seconds
+OK
+Time taken: 0.043 seconds
+Copying data from file:/Users/jaywang/Desktop/Tez/data/customer.tbl
+Copying file: file:/Users/jaywang/Desktop/Tez/data/customer.tbl
+Loading data to table default.customer
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/Users/jaywang/Desktop/data/hive_tables/customer
+Table default.customer stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+OK
+Time taken: 1.261 seconds
+OK
+Time taken: 0.027 seconds
+Total jobs = 1
+Launching Job 1 out of 1
+
+
+Status: Running (application id: application_1430150613519_0005)
+
+Map 1: -/-	Map 6: -/-	Map 7: -/-	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 0/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 0/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 0/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 0/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 0/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 0/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 1/2	Reducer 2: 0/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 1/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 1/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 1/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 1/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 1/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 2/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 2/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 2/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 2/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 2/2	Reducer 2: 1/1	Reducer 3: 0/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 2/2	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 0/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 2/2	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 1/1	Reducer 5: 0/1	
+Map 1: 1/1	Map 6: 1/1	Map 7: 2/2	Reducer 2: 1/1	Reducer 3: 1/1	Reducer 4: 1/1	Reducer 5: 1/1	
+Status: Finished successfully
+Loading data to table default.q3_shipping_priority
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted hdfs://localhost:9000/user/hive/warehouse/q3_shipping_priority
+Table default.q3_shipping_priority stats: [numFiles=1, numRows=10, totalSize=347, rawDataSize=337]
+OK
+Time taken: 104.505 seconds
+Benchmark 6 - Tez complete

@@ -1,0 +1,13 @@
+User:	jaywang
+Name:	HIVE-e0fe1127-d6c1-4b03-8f3b-8824a760b35f
+Application Type:	TEZ
+Application Tags:	
+State:	FINISHED
+FinalStatus:	SUCCEEDED
+Started:	27-Apr-2015 12:17:23
+Elapsed:	1mins, 44sec
+Tracking URL:	History
+Diagnostics:	
+Session stats:submittedDAGs=1, successfulDAGs=1, failedDAGs=0, killedDAGs=0
+
+Aggregate Resource Allocation:	451595 MB-seconds, 334 vcore-seconds
