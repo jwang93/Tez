@@ -56,9 +56,9 @@ Time taken: **1.887 seconds**
 
 **Job Execution Plans**:  
 MR  
-![MR Job](https://github.com/jwang93/Tez/blob/master/graphs/execution_plans/TPC-H_Q2_MR.pdf)  
+![MR Job](https://github.com/jwang93/Tez/blob/master/graphs/execution_plans/TPC-H_Q2_MR.png)  
 Tez  
-![Tez Job](https://github.com/jwang93/Tez/blob/master/graphs/execution_plans/TPC-H_Q2_Tez.pdf)
+![Tez Job](https://github.com/jwang93/Tez/blob/master/graphs/execution_plans/TPC-H_Q2_Tez.png)
 
 **Analysis**:  
 In each part of this benchmark, Tez dominates MR. In part one, the massive join takes MR a whopping three jobs. Factoring in both IO and job initialization cost, it is clear why Tez runs in less than half the time of MR. What is particularly interesting is part three of the query where Tez executes in a fraction of the MR run time. This is likely due to the container reuse ability of Tez. 
